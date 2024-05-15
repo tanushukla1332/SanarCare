@@ -12,13 +12,15 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
+import { MdArrowRight } from "react-icons/md";
+
+
+
 
 
 
 export default function Header() {
-    const dropdownIconStyle = {
-        fill: 'white', // Change the color as needed
-    };
+   
    
     return (
         <>
@@ -33,9 +35,6 @@ export default function Header() {
                    mx-auto my-2 my-lg-0"
                             style={{ maxHeight: '100px' }}
                             navbarScroll>
-                            
-
-
                             <Nav.Link><img src={Logo2} alt="" className='img-fluid pt-4' style={{ maxHeight: "130px" }} /></Nav.Link>
                             <Nav.Link href="#home" className='d-flex align-items-center text-center justify-content-center gap-2'>
                                 <img src={user} alt="" className='img-fluid' style={{ width: "20px", height: "20px" }} />
@@ -51,7 +50,7 @@ export default function Header() {
 
                         </Nav>
                     </Navbar.Collapse>
-                </Container>
+                </Container>0
                 <br />
                 <br />
             </Navbar>
@@ -70,16 +69,31 @@ export default function Header() {
                             <Link to='/'><img src={Home} alt="" style={{ width: "30px", height: "30px" }} />
                             </Link> </Navbar.Brand>
                             <Nav.Link className='text-light' > <Link to='/'>Home</Link> </Nav.Link>
-                            <NavDropdown title={<Link  to="/book" className="text-light" style={{fontWeight: '500', fontSize: '18px',color:"white"}}>Book Your Scans</Link>} id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">MRI SCANS</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">CT SCANS</NavDropdown.Item>  
-                             <NavDropdown.Item href="#action/3.2">CBCT</NavDropdown.Item>
-                             <NavDropdown.Item href="#action/3.2">BMT</NavDropdown.Item>
-                             <NavDropdown.Item href="#action/3.2">Ultrasound</NavDropdown.Item>
-                             <NavDropdown.Item href="#action/3.2">Cardiology</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.3">More Scans</NavDropdown.Item>
-                        </NavDropdown>
+                            <NavDropdown title={<Link to="/book" className="text-light" style={{fontWeight: '500', fontSize: '18px', color: "white"}}>Book Your Scans</Link>} id="basic-nav-dropdown">
+    <NavDropdown.Item href="#action/3.1"  className='d-flex justify-content-between'>
+        <span>MRI SCANS</span> <MdArrowRight/> {/* Add the dropdown icon */}
+    </NavDropdown.Item>
+    <NavDropdown.Divider />
+    <NavDropdown.Item href="#action/3.2"  className='d-flex justify-content-between'>
+        <span>CT SCANS</span> <MdArrowRight/> {/* Add the dropdown icon */}
+    </NavDropdown.Item> 
+    <NavDropdown.Divider /> 
+    <NavDropdown.Item href="#action/3.2"  className='d-flex justify-content-between'>
+        <span>CBCT</span> <MdArrowRight/> {/* Add the dropdown icon */}
+    </NavDropdown.Item>
+    <NavDropdown.Divider />
+    <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between'>
+        <span>BMT</span> <MdArrowRight /> {/* Add the dropdown icon */}
+    </NavDropdown.Item>
+    <NavDropdown.Divider />
+    <NavDropdown.Item href="#action/3.2"  className='d-flex justify-content-between' >
+        <span>Ultrasound</span> <MdArrowRight /> {/* Add the dropdown icon */}
+    </NavDropdown.Item>
+    <NavDropdown.Divider />
+    <NavDropdown.Item href="#action/3.2"  className='d-flex justify-content-between'>
+        <span>Cardiology</span> <MdArrowRight/> {/* Add the dropdown icon */}
+    </NavDropdown.Item>
+</NavDropdown>
                             <Nav.Link  className='text-light'><Link to="/doctors">Our Doctors </Link></Nav.Link>
                             <Nav.Link  className='text-light'> <Link to='/health'>Health Packages</Link> </Nav.Link>
                             <Nav.Link className='text-light' > <Link to="blogs">Blogs</Link> </Nav.Link>
