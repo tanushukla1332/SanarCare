@@ -2,7 +2,7 @@ import React from 'react';
 import { Form, FormGroup, FormControl, Button } from 'react-bootstrap';
 import './Form.css';
 import { FaBookMedical } from "react-icons/fa";
-import subicon from '../../public/Image/Formicon1.png';
+
 
 export default function FormLayout({ heading, formData, para, icons }) {
     return (

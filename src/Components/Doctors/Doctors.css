@@ -1,0 +1,86 @@
+.doctos-banner-text>h1{
+font-size: 65px;
+text-align: center;
+font-weight: 800;
+color: #FF631A;
+}
+.doctos-banner-text{
+    position: relative !important;
+}
+.doctos-banner-text>p{
+    font-size: 55px;
+    text-align: center;
+    color: #353434;
+    font-weight: 600;
+   
+}
+.doctos-banner-text>h2{
+    font-size: 65px;
+    text-align: center;
+    color: #156ea1;
+    font-weight: 800;
+}
+.form-control-search-page{
+    margin: auto;
+    border-radius: 8px !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color:#635A5A !important;
+    width: 350px !important;
+}
+.doctors-name ul li:nth-child(n-5){
+    list-style: none;
+    color:#635A5A ;
+    font-weight: 550;
+    font-size: 16px;
+    cursor: pointer ;
+    padding:2px;
+}
+.doctors-name ul li:active,
+.doctors-name ul li:focus,
+.doctors-name ul li:hover {
+    color: #156ea1 !important; /* For example */
+}
+.doctors-card {
+    background: linear-gradient(to right, #46A4D9, #C1E4F9) !important;
+    position: relative;
+    padding: 20px !important;
+    width: 100% !important;
+    display: flex !important;
+  } 
+  .doctor-image-container {
+    display: flex !important;
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+  }
+  
+  .doctor-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: relative;
+    top: -80px;
+    left: -2px;
+    border: 10px solid rgba(255, 255, 255, 0.673);
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+  .button-container button:nth-child(1){
+    background-color: #FF851B !important;
+  }
+  .button-container button:nth-child(2){
+    background-color: #29A71A !important;
+  }
+  
+  .whatsapp-button {
+    display: flex;
+    align-items: center;
+  }
+
