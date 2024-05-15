@@ -1,0 +1,320 @@
+
+.navbar-header .nav-link a{
+  text-decoration: none;
+  color: #f2f2f2;
+  font-weight: 500;
+  font-size: 20px;
+
+
+}
+
+  .banner h1 {
+    color: #5E5E5E;
+    font-weight: bolder;
+    font-size: 50px;
+  }
+  
+  .banner h1 span.scan{
+    color: #FF631A;
+    font-size: 60px;
+    font-weight: bold;
+  }
+  
+  .banner h1 span.reflects {
+    color: #FF631A;
+    font-size: 60px;
+    font-weight: bold;
+  }
+  
+  .banner h1 span.health {
+    color: #5E5E5E;
+    font-weight: bold;
+    font-size: 60px;
+  }
+  .banner h1 p.Priority{
+    color: #FF631A;
+    font-size: 65px;
+    font-weight: bold;
+  }
+  
+  .radiology-data {
+    height:150PX !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:150px;
+}
+.rd-img{
+  width:60%;
+  height: 60%;
+}
+
+.ndsectionwhysanarCare{
+    box-shadow: 0px 15px 40px 15px rgb(154, 170, 207,25%);
+    border-radius:8px;
+    display: flex;
+    padding:20px;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3ms ease-in;
+    background-color: white;
+    width: 200px ;
+    height: 200px;
+    transition: 0.3s ease-in;
+}
+.ndsectionwhysanarCare:hover{
+  transform: scale(1.1) !important;
+}
+.scan-image {
+  width: 390px !important; /* Set the width to 100% */
+  height: 372px !important; /* Maintain aspect ratio */
+}
+.scan-card .card-img-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0px !important;
+}
+.icon{
+  width: 50px !important;
+}
+
+.scan-details {
+  text-align: center;
+  color: #fff;
+}
+
+.scan-details .card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.scan-details .card-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.scan-details .price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.buttonfirst{
+background-color :#46A4D9 !important;
+color: white !important;
+font-weight: 550 !important;
+display: flex!important;
+align-items: center !important;
+justify-content: center !important;
+border: none!important;
+border-radius: 6px!important;
+border: none!important;
+outline: none!important;
+box-shadow: none!important;
+padding: 10px;
+}
+.buttonfirst:hover{
+  color: white !important;
+  background-color: #4085AD !important;
+}
+.scansIndicators>a>.carousel-control-next-icon{
+  border-radius: 50px!important;
+  border: 2px solid white!important;
+  background-color:#46A4D9!important;
+  padding: 10px; 
+  position: absolute;
+  right: -45px !important;
+
+}
+.scansIndicators>a>.carousel-control-prev-icon{
+  border-radius: 50px!important;
+  border: 2px solid white!important;
+  background-color:#46A4D9!important;
+  padding: 10px; 
+  position: absolute;
+  left: -45px !important;
+
+}
+.fifthsec{
+  box-shadow: 0px 15px 40px 15px rgb(154, 170, 207,25%);
+    border-radius:10px;
+    display: flex;
+    padding:20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3ms ease-in;
+    background-color: white;
+     width: 300px ;
+     height: 270px;
+  
+}
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #fffb !important; /* Background color */
+  color: #000 !important; /* Text color */
+  border: 1px solid #000 !important; /* Border */
+  border-radius: 50%; /* Make it round */
+ /* Width of the navigation buttons *//* Height of the navigation buttons */
+ padding: 23px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s, color 0.3s !important; /* Transition effect */
+  position: absolute !important;
+
+
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #4a9acf !important; /* Hover background color */
+  color: #fff !important; /* Hover text color */
+}
+.doctor-card {
+  position: relative;
+}
+.doctor-image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 1;
+}
+.card-doctor-main{
+  margin-top: 100px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width:400px;
+  height: 300px;
+  transition: 0.3s ease-in;
+}
+.card-doctor-main:hover{
+  transform: scale(1.1);
+
+}
+.card-doctor-main .card-title {
+  text-align: center;
+  font-weight: bold;
+  margin-top:130px;
+}
+
+.card-doctor-main  .card-text {
+  text-align: center;
+  margin-bottom: 10px;
+ 
+}
+.health-div{
+  box-shadow: 0px 15px 40px 0px rgb(154, 170, 207,25%);
+  padding: 16px;
+
+}
+.card-header{
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0px 4px 4px 0px rgb(0, 0, 0,25%) !important;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+}
+.card-header:hover {
+  background-color: #e0e0e0;
+}
+
+.section11-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #46a4d9;
+  width: 80%;
+
+}
+.testimonial-card {
+  background-color: #ffffff !important;
+  border-radius: 0px !important;
+  width: auto !important;
+  height: 400px !important;
+  border: 0px !important;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.219);
+}
+
+/* Testimonial Image */
+.testimonial-image {
+  margin-bottom: 20px;
+  width: 100% !important;
+ 
+}
+/* Swiper Container */
+.swiper-container {
+  width: 900px !important;
+  max-width: 900px;
+  
+  position: relative;
+}
+.step-text{
+  font-size: 19px;
+  background-color: #f2f2f2c2;
+  padding:18px;
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+
+}
+/* TestBooking.css */
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px ;
+  height: 350px;
+}
+.step-icon {
+  border-radius: 50%;
+  display: flex;
+  justify-content:center !important;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 30px !important;
+}
+.Card-Healthscan{
+border-radius:10px;
+transition: 0.3s ease-in;
+background-color: white;
+box-shadow: 0 4px 4px 0px rgb(0, 0, 0,25%);
+padding: 10px;
+height: 500px;
+}
+
+
+.AllbuttonForMove{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap:20px;
+  
+}
+.AllbuttonForMove Button {
+  background-color:#3B7FBF!important;
+  border: none!important;
+  box-shadow: none!important;
+  color: white! important;
+  border-radius: 0px !important;
+  margin-top: 20px;
+  
+
+}
+
