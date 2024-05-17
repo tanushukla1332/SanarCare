@@ -55,8 +55,11 @@ export default function Home() {
             <Section9 />
             <Section10 />
             <Section11 />
+            <br/>
+            <br/>
             
             <Section13 />
+            <br/><br/><br/>
         </>
     )
 }

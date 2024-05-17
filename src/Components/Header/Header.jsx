@@ -49,7 +49,7 @@ export default function Header() {
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
-                </Container>0
+                </Container>
                 <br />
                 <br />
             </Navbar>

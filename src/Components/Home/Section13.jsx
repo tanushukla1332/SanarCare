@@ -57,9 +57,9 @@ export default function Section13() {
 
     return (
         <>
-            <Row className='flex justify-content-center align-items-center py-5'  >
+            <Row className='flex justify-content-center align-items-center py-5 ' style={{backgroundColor:"#DEF0FF"}}  >
                 <div className='text-center'>
-                    <h1 className='hed1 py-5'>Keep Updated on Diagnostic and  <br /> Pathology Lab Offers in Gurgaon</h1>
+                    <h1 className='hed1 pb-5'>Keep Updated on Diagnostic and  <br /> Pathology Lab Offers in Gurgaon</h1>
                 </div>
                 <div className={`AllbuttonForMove port-text ${currentPage === 1 ? '' : 'slide'}`}>
                     {visibleRecords.map((item, id) => (

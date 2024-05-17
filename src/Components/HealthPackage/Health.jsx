@@ -28,7 +28,9 @@ export default function Health() {
             <br />
             <br />
             <Section10 />
-            <Row className="d-flex justify-content-center align-items-center py-5" style={{ backgroundColor: "#DEF0FF" }}>
+            
+            <Section13 />
+            <Row className="d-flex justify-content-center align-items-center py-5">
                 <Col md={10}>
                     <h1 className="hed1 text-center">Popular tests in Gurgaon</h1>
                     <p className="para">Full Body Health Checkup in Gurgaon / Heart Test in Gurgaon / Kidney Test in Gurgaon / Liver Test in Gurgaon / Thyroid Test in Gurgaon /
@@ -39,9 +41,7 @@ export default function Health() {
 
                 </Col>
             </Row>
-            <Section13 />
-            <br />
-            <br />
+           
 
 
         </>

@@ -1,1 +1,6 @@
-
+.gapfordiv{
+    display: flex !important;
+    justify-content: space-evenly !important;
+    gap:100px !important
+ 
+}
