@@ -79,9 +79,9 @@ export default function Section9() {
         <Row className="py-5 d-flex justify-content-center align-items-center">
         <h1 className='hed1 text-center'>HEALTH PACKAGES OFFERS</h1>
         <Col md={10}>
-            <Row className='py-5'>
+            <Row className='py-5 d-flex'>
                 {healthdata.slice(0, displayCount).map((data, index) => (
-                    <Col key={index} md={4}>
+                    <Col key={index} md={4} className='py-3'>
                         <div className='health-div'>
                             <img src={data.img} alt="" className='img-fluid' />
                                 <h4 className='hed4 text-center pt-5 fw-bold' style={{ color: "#46A4D9" }}>{data.titile}</h4>

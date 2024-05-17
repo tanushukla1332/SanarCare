@@ -1,0 +1,88 @@
+.form-scans-col {
+    background-color: white;
+    box-shadow: 0 15px 40px 10px rgb(154, 170, 207, 0.25) !important;
+    border-top-right-radius: 25px !important;
+    border-top-left-radius: 25px !important;
+    height:  735px!important; /* Set the height to viewport height */
+    overflow-y: auto !important;
+  }
+
+
+.form-scans form div .form-label{
+    color:#46A4D9;
+}
+.form-scans form div  .form-control{
+    border: 1px solid gray !important;
+    box-shadow: none !important;
+
+}
+.form-check-input{
+    border: 1px solid #46A4D9;
+    box-shadow: none !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+.scan-card{
+    border: 0px !important;
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.096) !important;
+    border-right: 12px solid #FF851B !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    padding: 0px 30px ;
+}
+.scan-card-img-div{
+   width: 100px;
+   height: 90px;
+   padding: 20px;
+    background-color: #E9FAFF !important;
+    border-radius: 50% !important;
+}
+.scan-div1st{
+    box-shadow: 0 15px 40px 10px rgba(154, 170, 207, 0.127) !important;
+    width: 329px !important;
+    height: 270px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.filed-div{
+    gap:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #46A4D9 !important; 
+    margin-left: 100px !important;
+    width: 720px !important;
+    height:80px !important;
+    border-radius: 20px!important;
+    padding: 5px 10px !important;
+}
+.button-white-bg{
+    background-color: white!important;
+    color: #46A4D9 !important;
+    font-weight: 700 !important;
+    border: none !important;
+    border-radius: 20px !important;
+    padding: 10px !important;
+    width: 200px !important;
+}
+.scan-div2 {
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.096) !important; 
+    width: 200px !important;
+    height: 45px !important;
+    text-align: center !important;
+    padding: 10px 0px !important;
+    border-radius: 15px !important;
+    font-weight: 700 !important;
+}
+.scan-div2:hover{
+    background-color: #46A4D9 !important;
+    color: white !important;
+
+}
+
+

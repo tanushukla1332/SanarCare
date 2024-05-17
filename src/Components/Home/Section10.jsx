@@ -12,7 +12,6 @@ export default function Ses() {
       setExpandedIndex(index); // Expand if not expanded
     }
   };
-
   return (
     <>
       <Row className='d-flex justify-content-center align-items-center pb-5'>

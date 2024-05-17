@@ -20,8 +20,8 @@ import { MdArrowRight } from "react-icons/md";
 
 
 export default function Header() {
-   
-   
+
+
     return (
         <>
             <Navbar bg="light" expand="lg" data-bs-theme="light" style={{ height: "75px" }}>
@@ -47,7 +47,6 @@ export default function Header() {
                                     <p style={{ fontSize: '14px', fontWeight: '550', color: "#252525", margin: "0" }}>7042148149</p>
                                 </div>
                             </Nav.Link>
-
                         </Nav>
                     </Navbar.Collapse>
                 </Container>0
@@ -66,38 +65,38 @@ export default function Header() {
                             navbarScroll
                         >
                             <Navbar.Brand>
-                            <Link to='/'><img src={Home} alt="" style={{ width: "30px", height: "30px" }} />
-                            </Link> </Navbar.Brand>
+                                <Link to='/'><img src={Home} alt="" style={{ width: "30px", height: "30px" }} />
+                                </Link> </Navbar.Brand>
                             <Nav.Link className='text-light' > <Link to='/'>Home</Link> </Nav.Link>
-                            <NavDropdown title={<Link to="/book" className="text-light" style={{fontWeight: '500', fontSize: '18px', color: "white"}}>Book Your Scans</Link>} id="basic-nav-dropdown">
-    <NavDropdown.Item href="#action/3.1"  className='d-flex justify-content-between'>
-        <span>MRI SCANS</span> <MdArrowRight/> {/* Add the dropdown icon */}
-    </NavDropdown.Item>
-    <NavDropdown.Divider />
-    <NavDropdown.Item href="#action/3.2"  className='d-flex justify-content-between'>
-        <span>CT SCANS</span> <MdArrowRight/> {/* Add the dropdown icon */}
-    </NavDropdown.Item> 
-    <NavDropdown.Divider /> 
-    <NavDropdown.Item href="#action/3.2"  className='d-flex justify-content-between'>
-        <span>CBCT</span> <MdArrowRight/> {/* Add the dropdown icon */}
-    </NavDropdown.Item>
-    <NavDropdown.Divider />
-    <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between'>
-        <span>BMT</span> <MdArrowRight /> {/* Add the dropdown icon */}
-    </NavDropdown.Item>
-    <NavDropdown.Divider />
-    <NavDropdown.Item href="#action/3.2"  className='d-flex justify-content-between' >
-        <span>Ultrasound</span> <MdArrowRight /> {/* Add the dropdown icon */}
-    </NavDropdown.Item>
-    <NavDropdown.Divider />
-    <NavDropdown.Item href="#action/3.2"  className='d-flex justify-content-between'>
-        <span>Cardiology</span> <MdArrowRight/> {/* Add the dropdown icon */}
-    </NavDropdown.Item>
-</NavDropdown>
-                            <Nav.Link  className='text-light'><Link to="/doctors">Our Doctors </Link></Nav.Link>
-                            <Nav.Link  className='text-light'> <Link to='/health'>Health Packages</Link> </Nav.Link>
-                            <Nav.Link className='text-light' > <Link to="blogs">Blogs</Link> </Nav.Link>
-                            <Nav.Link className='text-light'>   <Link to='/contact'>Reach Us</Link> </Nav.Link>
+                            <NavDropdown title={<Link to="/bookyourscans" className="text-light" style={{ fontWeight: '500', fontSize: '18px', color: "white" }}>Book Your Scans</Link>} id="basic-nav-dropdown">
+                                <NavDropdown.Item href="#action/3.1" className='d-flex justify-content-between'>
+                                    <span>MRI SCANS</span> <MdArrowRight /> {/* Add the dropdown icon */}
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between'>
+                                    <span>CT SCANS</span> <MdArrowRight /> {/* Add the dropdown icon */}
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between'>
+                                    <span>CBCT</span> <MdArrowRight /> {/* Add the dropdown icon */}
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between'>
+                                    <span>BMT</span> <MdArrowRight /> {/* Add the dropdown icon */}
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between' >
+                                    <span>Ultrasound</span> <MdArrowRight /> {/* Add the dropdown icon */}
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between'>
+                                    <span>Cardiology</span> <MdArrowRight /> {/* Add the dropdown icon */}
+                                </NavDropdown.Item>
+                            </NavDropdown>
+                            <Nav.Link className='text-light'><Link to="/doctors">Our Doctors </Link></Nav.Link>
+                            <Nav.Link className='text-light'><Link to="/health">Health Packages</Link> </Nav.Link>
+                            <Nav.Link className='text-light' ><Link to="blog">Blogs</Link> </Nav.Link>
+                            <Nav.Link className='text-light'><Link to='/contact'>Reach Us</Link> </Nav.Link>
                         </Nav>
                         <Form className="d-flex">
                             <div className="position-relative">

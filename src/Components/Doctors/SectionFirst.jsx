@@ -1,10 +1,6 @@
 import {Row,Col,Form,Card } from  'react-bootstrap';
 import { FaSearch } from 'react-icons/fa';
 import Doctorsimg1 from '../../../public/Image/doctors (1).jpg';
-import Doctorsimg2 from '../../../public/Image/doctors (2).jpg';
-import Doctorsimg3 from '../../../public/Image/doctors (3).jpg';
-import Doctorsimg4 from '../../../public/Image/doctors (4).jpg';
-import Doctorsimg5 from '../../../public/Image/doctors (5).jpg';
 import DoctorCard from './DoctorsCard';
 
 
@@ -12,21 +8,52 @@ import DoctorCard from './DoctorsCard';
 
 export default function SectionFirst(){
     
-    const doctorData = {
-        name: 'Dr. Suneet Yadav',
+    const doctorCardData1 = {
+        name: 'Dr. Suneeta Yadav',
         specialization: 'Cardiac Surgeon',
         location: 'Gurugram, India',
-        experience: '30',
+        experience: 'Year of Experience: 30+',
         designation: 'Director at',
         hospital: 'Max Hospital Gurugram',
         imageUrl: Doctorsimg1,
       };
       
+      const doctorCardData2 = {
+        name: 'Dr. Garima Singh',
+        specialization: 'Cardiac Surgeon',
+        location: 'Gurugram, India',
+        experience: 'Year of Experience: 30+',
+        designation: 'Director at',
+        hospital: 'Max Hospital Gurugram',
+        imageUrl: Doctorsimg1,
+      };
+      
+      const doctorCardData3 = {
+        name: 'Dr. Riddhi Kumari',
+        specialization: 'Cardiac Surgeon',
+        location: 'Gurugram, India',
+        experience: 'Year of Experience: 30+',
+        designation: 'Director at',
+        hospital: 'Max Hospital Gurugram',
+        imageUrl: Doctorsimg1,
+      };
+      
+      const doctorCardData4 = {
+        name: 'Dr. Nidhi Kumari',
+        specialization: 'Neurologist',
+        location: 'New Delhi, India',
+        experience: 'Year of Experience: 20+',
+        designation: 'Senior Consultant at',
+        hospital: 'Apollo Hospital',
+        imageUrl: Doctorsimg1, // Add the appropriate image URL for the fourth doctor
+      };
+      
+      
 
     return(
         <>
         <Row className='py-5 d-flex justify-content-center align-items-center'>
-            <Col md={12}  className="px-0 py-3 d-flex justify-content-center  gap-5" >
+            <Col md={12}  className="px-0 py-3 d-flex justify-content-evenly" >
                 <div className='col-md-3' style={{boxShadow:"0px 15px 40px 0px #9aaacf40"}}>
 
                 <Form className="d-flex flex-column p-3">
@@ -78,14 +105,13 @@ export default function SectionFirst(){
                                     <li>Sunidhi Arora</li>
                                     <li>Sagar Cobra</li>
                                 </ul>
-                           
-                              
                             </div>
                             </div>
-                
-                <div className='col-md-7'>
-                <DoctorCard doctor={doctorData} />
-
+                <div className='col-md-6 d-flex flex-column gap-5'>
+                <DoctorCard doctor={doctorCardData1} />
+                <DoctorCard doctor={doctorCardData2} />
+                <DoctorCard doctor={doctorCardData3} />
+                <DoctorCard doctor={doctorCardData4} />
                 </div>
                 </Col>
                

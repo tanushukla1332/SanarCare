@@ -1,29 +1,59 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Card, Button,Accordion } from 'react-bootstrap';
 import { FaWhatsapp } from 'react-icons/fa';
+
 
 const DoctorCard = ({ doctor }) => {
   return (
-    <Card className="doctors-card d-flex">
-      <div className="doctor-image-container">
-        <img src={doctor.imageUrl} alt={doctor.name} className="doctor-image" />
-      </div>
-      <div className="card-content-container d-flex flex-column justify-content-between">
-        <Card.Body>
-          <Card.Title>{doctor.name}</Card.Title>
-          <Card.Text>{doctor.specialization}, {doctor.location}</Card.Text>
-          <Card.Text>Year of Experience: {doctor.experience}+</Card.Text>
-          <Card.Text>Designation: {doctor.designation}</Card.Text>
-          <Card.Text>{doctor.hospital}</Card.Text>
-        </Card.Body>
-        <div className="button-container d-flex justify-content-between">
-          <Button>Inquiry Now</Button>
-          <Button className="whatsapp-button">
-            WhatsApp <FaWhatsapp />
-          </Button>
+    <>
+    <Card className='doctors-card d-flex flex-row align-items-center justify-content-center'>
+      <Card.Img variant="top"  src={doctor.imageUrl}  className='card-image-conatiner' />
+      <Card.Body>
+        <Card.Title><h3 className='hed3 text-white'>{doctor.name}</h3></Card.Title>
+        <Card.Text>
+        <p className='hed4 text-white fw-normal'>{doctor.specialization},{doctor.location}</p>
+        <p className='hed4 '>{doctor.experience}</p>
+        <p  className='hed4 text-white fw-normal'><span  className='hed4 fw-bold' >Designation</span>:{doctor.designation}</p>
+        <p className='hed4'>{doctor.hospital}</p>
+        </Card.Text>
+      </Card.Body>
+      <div className='button-container'>
+        <Button variant="primary" className='my-3'>Enquiry Now</Button>
+        <Button variant="primary">Whatsapp <span><FaWhatsapp/></span></Button>
         </div>
-      </div>
     </Card>
+    <Accordion defaultActiveKey="0"  className="doctors-cardiind">
+      <Accordion.Item eventKey="0">
+        <Accordion.Header> <h1 className='text-lg hed3'  style={{color:"#46A4D9"}}>Doctor Profile</h1>
+        </Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1">
+        <Accordion.Header> <h1 className='text-lg hed3'  style={{color:"#46A4D9"}}>specialization</h1> </Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
+   
+
+</>
+    
+    
   );
 };
 

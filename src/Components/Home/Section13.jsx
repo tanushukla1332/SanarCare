@@ -57,7 +57,7 @@ export default function Section13() {
 
     return (
         <>
-            <Row className='flex justify-content-center align-items-center py-5' >
+            <Row className='flex justify-content-center align-items-center py-5'  >
                 <div className='text-center'>
                     <h1 className='hed1 py-5'>Keep Updated on Diagnostic and  <br /> Pathology Lab Offers in Gurgaon</h1>
                 </div>

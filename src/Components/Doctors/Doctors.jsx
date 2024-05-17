@@ -7,6 +7,8 @@ import phoneicon from '../../../public/Image/Formicon1 (3).png';
 import messageicon from '../../../public/Image/Formicon1 (2).png';
 import './Doctors.css'
 import SectionFirst from "./SectionFirst";
+import Section10 from '../Home/Section10';
+import Section11 from '../Home/Section11';
 
 
 
@@ -41,6 +43,16 @@ export default function Doctors(){
         'number': phoneicon,
         'textarea': messageicon,  
     };
+    const selectField1 = {
+        type: 'select',
+        placeholder: 'Subject',
+        options: [
+            {label:'subject', value:'disabled'},
+            { label: 'General Enquiry', value: 'general_enquiry' },
+            { label: 'Book an appointment', value: 'book_appointment' }
+        ],
+        required: true
+    };
     return(
         <>
         <Row style={{backgroundImage:`url(${doctorbnr})`,backgroundPosition:"center",backgroundRepeat:"no-repeat",
@@ -54,7 +66,7 @@ export default function Doctors(){
                 <h2>Team of Experties</h2>
                 </div>
                 <div style={{position:"absolute",top:"85%"}}>
-                <FormLayout heading="Inquiry Now" formData={formData1} icons={icons}/>
+                <FormLayout heading="Inquiry Now" formData={formData1} form icons={icons} selectField={selectField1}/>
                 </div>
                 
           </Col>
@@ -74,6 +86,10 @@ export default function Doctors(){
      
        
         <SectionFirst/>
+      
+        <Section11/>
+        <Section10/>
+      
       
       
 

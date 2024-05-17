@@ -1,11 +1,16 @@
 
-.navbar-header .nav-link a{
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Adjust z-index as needed */
+}
+
+.navbar-header .nav-link a {
   text-decoration: none;
   color: #f2f2f2;
   font-weight: 500;
   font-size: 20px;
 }
-
   .banner h1 {
     color: #5E5E5E;
     font-weight: bolder;
@@ -208,10 +213,12 @@ padding: 10px;
  
 }
 .health-div{
-  box-shadow: 0px 15px 40px 0px rgb(154, 170, 207,25%);
+  box-shadow: 0px 15px 40px 10px rgb(154, 170, 207,25%);
   padding: 16px;
+  height: 520px;
 
 }
+
 .card-header{
   cursor: pointer;
   padding: 10px 20px;
