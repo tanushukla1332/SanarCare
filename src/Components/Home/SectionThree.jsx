@@ -38,7 +38,7 @@ export default function SectionThree(){
             </Col>
             <Col md={4}>
             <Card className="scan-card">
-              <Card.Img src={ultrasoundImg} alt="Ultrasound"  className="scan-image"/>
+              <Card.Img src={xrayImg} alt="Ultrasound"  className="scan-image"/>
               <Card.ImgOverlay>
                 <div className="scan-details">
                   <Card.Title>Ultra Sound</Card.Title>
@@ -56,7 +56,7 @@ export default function SectionThree(){
           </Col>
             <Col md={4}>
               <Card className="scan-card">
-                <Card.Img src={ctScanImg} alt="X-Ray"  className="scan-image" />
+                <Card.Img src={xrayImg} alt="X-Ray"  className="scan-image" />
                 <Card.ImgOverlay>
                   <div className="scan-details">
                     <Card.Title>CT Scan</Card.Title>
@@ -96,7 +96,7 @@ export default function SectionThree(){
             </Col>
             <Col md={4}>
               <Card className="scan-card">
-                <Card.Img src={ultrasoundImg} alt="CT Scan"  className="scan-image" />
+                <Card.Img src={xrayImg} alt="CT Scan"  className="scan-image" />
                 <Card.ImgOverlay>
                   <div className="scan-details">
                     <Card.Title>MRI Test</Card.Title>
@@ -114,7 +114,7 @@ export default function SectionThree(){
             </Col>
             <Col md={4}>
               <Card className="scan-card">
-                <Card.Img src={ctScanImg} alt="X-Ray"   className="scan-image"/>
+                <Card.Img src={xrayImg} alt="X-Ray"   className="scan-image"/>
                 <Card.ImgOverlay>
                   <div className="scan-details">
                     <Card.Title>ECG Test</Card.Title>

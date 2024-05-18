@@ -68,29 +68,31 @@ export default function Header() {
                                 <Link to='/'><img src={Home} alt="" style={{ width: "30px", height: "30px" }} />
                                 </Link> </Navbar.Brand>
                             <Nav.Link className='text-light' > <Link to='/'>Home</Link> </Nav.Link>
+
                             <NavDropdown title={<Link to="/bookyourscans" className="text-light" style={{ fontWeight: '500', fontSize: '18px', color: "white" }}>Book Your Scans</Link>} id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1" className='d-flex justify-content-between'>
-                                    <span>MRI SCANS</span> <MdArrowRight /> {/* Add the dropdown icon */}
+                                <NavDropdown.Item href="#action/3.1" className='d-flex justify-content-between drop-down'>
+                                    <span><Link to='/bookyourscans/mri' >MRI SCANS</Link>
+                                    <MdArrowRight />  </span> {/* Add the dropdown icon */}
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between'>
-                                    <span>CT SCANS</span> <MdArrowRight /> {/* Add the dropdown icon */}
+                                <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between drop-down'>
+                                    <span> <Link>CT SCANS</Link></span> <MdArrowRight /> {/* Add the dropdown icon */}
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between'>
-                                    <span>CBCT</span> <MdArrowRight /> {/* Add the dropdown icon */}
+                                <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between drop-down'>
+                                    <span><Link>CBCT</Link></span> <MdArrowRight /> {/* Add the dropdown icon */}
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between'>
-                                    <span>BMT</span> <MdArrowRight /> {/* Add the dropdown icon */}
+                                <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between drop-down'>
+                                    <span><Link>BMT</Link></span> <MdArrowRight /> {/* Add the dropdown icon */}
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between' >
-                                    <span>Ultrasound</span> <MdArrowRight /> {/* Add the dropdown icon */}
+                                <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between drop-down' >
+                                    <span><Link>Ultrasound</Link></span> <MdArrowRight /> {/* Add the dropdown icon */}
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between'>
-                                    <span>Cardiology</span> <MdArrowRight /> {/* Add the dropdown icon */}
+                                <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between drop-down'>
+                                    <span><Link>Cardiology</Link></span> <MdArrowRight /> {/* Add the dropdown icon */}
                                 </NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link className='text-light'><Link to="/doctors">Our Doctors </Link></Nav.Link>

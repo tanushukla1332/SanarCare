@@ -12,7 +12,12 @@ import Section10 from '../Home/Section10';
 
 
 
+import { useNavigate } from 'react-router-dom';
+
+
+
 export default function Blog() {
+    const navigate=useNavigate()
     return (
         <>
             <Row style={{
@@ -34,9 +39,9 @@ export default function Blog() {
             <Row className='py-5 d-flex'>
                 <Col md={12} className="px-0 d-flex justify-content-evenly" >
                     <div className='col-md-6 d-flex flex-column '>
-                        <h1 className="hed1  pb-3" >Home/blogs</h1>
+                        <h1 className="hed1  pb-3" >Blogs</h1>
                         <div>
-                            <img src={blog6img} alt="" className='img-fluid' />
+                            <img src={blog6img} alt="" className='img-fluid' onClick={()=>navigate('/blog/blogdetails')}/>
                             <h3 className='hed3 pt-4 pb-2' style={{ color: "#46A4D9" }}>Revaccination against coronavirus will help to stay healthy</h3>
                             <p className='para'>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has

@@ -9,7 +9,9 @@ import Doctors from './Components/Doctors/Doctors'
 import Contact from './Components/ContactUs/Contact'
 import Health from './Components/HealthPackage/Health'
 import Blog from './Components/BlogPage/Blog'
-import BookYourScan from './Components/BookYourScans/Scans'
+import Category from './Components/Category/Category'
+import BookYourScansMainPage from './Components/ServicesMainPage/Services'
+import BlogDetails from './Components/BlogPage/BlogDetails'
 function App() {
 
   return (
@@ -24,7 +26,10 @@ function App() {
       <Route path='/contact' element={<Contact/>}></Route>
       <Route path='/health' element={<Health/>}></Route>
       <Route path='/blog' element={<Blog/>}></Route>
-      <Route path='/bookyourscans' element={<BookYourScan/>}></Route>
+      <Route path='/bookyourscans/mri' element={<Category/>}></Route>
+      <Route path='/bookyourscans' element={<BookYourScansMainPage/>}></Route>
+      <Route path='/blog/blogdetails' element={<BlogDetails/>}></Route>
+   
 
       </Routes>
       <Footer/>
