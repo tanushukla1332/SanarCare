@@ -59,7 +59,7 @@ export default function Header() {
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
                             className="
-                             d-flex justify-content-center align-items-center  mx-auto gap-5
+                             d-flex justify-content-center align-items-center  mx-auto gap-4
                                mx-auto my-2 my-lg-0 text-light navbar-header"
                             style={{ maxHeight: '100px' }}
                             navbarScroll
@@ -105,7 +105,7 @@ export default function Header() {
                                 <Form.Control
                                     type="search"
                                     aria-label="Search"
-                                    placeholder='search your scan'
+                                    placeholder='search your scans'
                                 />
                                 <FaSearch color='#4085AD' className="position-absolute top-50 end-0 translate-middle-y "
                                     style={{ marginRight: "15px" }} />

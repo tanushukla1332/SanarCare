@@ -14,7 +14,7 @@ export default function Ses() {
   };
   return (
     <>
-      <Row className='d-flex justify-content-center align-items-center pb-5'>
+      <Row className='d-flex justify-content-center align-items-center py-5'>
         <Col md={10}>
           <h1 className='text-center hed1'>FAQs</h1>
           <h4 className='text-center hed4 pb-5'>Frequently Asked Questions</h4>

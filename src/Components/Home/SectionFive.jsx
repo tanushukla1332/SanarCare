@@ -13,8 +13,8 @@ export default function SectionFive(){
         <Row className='d-flex justify-content-center align-items-center py-5'
        >
         <Col md={10}>
-        <h1 className='text-center hed1'>Are you keeping up with your preventive care?</h1>
-        <div className='d-flex justify-content-center align-items-center gap-4 pt-5'>
+        <h1 className='text-center hed1 pb-5'>Are you keeping up with your preventive care?</h1>
+        <div className='d-flex justify-content-center align-items-center gap-4'>
         <div className='fifthsec' style={{backgroundColor:"#FF5F1B4d"}}>
         <img src={fifthsecimg1} alt="" className='img-fluid' />
         <h4 className='hed3 text-center'>Early Detection</h4>
@@ -41,7 +41,7 @@ export default function SectionFive(){
         </div>
 
         </div>
-        <div className='d-flex justify-content-center align-items-center gap-4 pt-5'>
+        <div className='d-flex justify-content-center align-items-center gap-4 pt-4'>
         <div className='fifthsec' style={{backgroundColor:"#99E6FF"}}>
         <img src={fifthsecimg4} alt="" className='img-fluid'  style={{width:"62px"}} />
         <h4 className='hed3 text-center'>Cost Savings</h4>

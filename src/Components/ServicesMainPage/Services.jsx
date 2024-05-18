@@ -39,7 +39,7 @@ export default function BookYourScansMainPage() {
           <Row className="py-3 d-flex justify-content-center align-items-center">
             <Col md={4}>
               <Card className="scan-card-main">
-                <Card.Img src={xrayImg} alt="Ultrasound" />
+                <Card.Img src={xrayImg} alt="Ultrasound"   className="scan-image"/>
                 <Card.ImgOverlay>
                   <div className="scan-details">
                     <Card.Title>X-Ray</Card.Title>
@@ -57,7 +57,7 @@ export default function BookYourScansMainPage() {
             </Col>
             <Col md={4}>
               <Card className="scan-card-main">
-                <Card.Img src={xrayImg} alt="Ultrasound" className="scan-image" />
+                <Card.Img src={ultrasoundImg} alt="Ultrasound" className="scan-image" />
                 <Card.ImgOverlay>
                   <div className="scan-details">
                     <Card.Title>Ultra Sound</Card.Title>
@@ -75,7 +75,7 @@ export default function BookYourScansMainPage() {
             </Col>
             <Col md={4}>
               <Card className="scan-card-main">
-                <Card.Img src={xrayImg} alt="X-Ray" className="scan-image" />
+                <Card.Img src={ctScanImg} alt="X-Ray" className="scan-image" />
                 <Card.ImgOverlay>
                   <div className="scan-details">
                     <Card.Title>CT Scan</Card.Title>
@@ -95,7 +95,7 @@ export default function BookYourScansMainPage() {
           <Row className="py-3 d-flex justify-content-center align-items-center">
             <Col md={4}>
               <Card className="scan-card-main">
-                <Card.Img src={xrayImg} alt="Ultrasound" />
+                <Card.Img src={xrayImg} alt="Ultrasound"  className="scan-image" />
                 <Card.ImgOverlay>
                   <div className="scan-details">
                     <Card.Title>PT SCAN</Card.Title>
@@ -113,7 +113,7 @@ export default function BookYourScansMainPage() {
             </Col>
             <Col md={4}>
               <Card className="scan-card-main">
-                <Card.Img src={xrayImg} alt="CT Scan" className="scan-image" />
+                <Card.Img src={ultrasoundImg} alt="CT Scan" className="scan-image" />
                 <Card.ImgOverlay>
                   <div className="scan-details">
                     <Card.Title>MRI Test</Card.Title>
@@ -131,7 +131,7 @@ export default function BookYourScansMainPage() {
             </Col>
             <Col md={4}>
               <Card className="scan-card-main">
-                <Card.Img src={xrayImg} alt="X-Ray" className="scan-image" />
+                <Card.Img src={ctScanImg} alt="X-Ray" className="scan-image" />
                 <Card.ImgOverlay>
                   <div className="scan-details">
                     <Card.Title>ECG Test</Card.Title>
@@ -151,7 +151,7 @@ export default function BookYourScansMainPage() {
           <Row className="py-3 d-flex justify-content-center align-items-center">
             <Col md={4}>
               <Card className="scan-card-main">
-                <Card.Img src={xrayImg} alt="Ultrasound" />
+                <Card.Img src={xrayImg} alt="Ultrasound"  className="scan-image" />
                 <Card.ImgOverlay>
                   <div className="scan-details">
                     <Card.Title>PT SCAN</Card.Title>
@@ -169,7 +169,7 @@ export default function BookYourScansMainPage() {
             </Col>
             <Col md={4}>
               <Card className="scan-card-main">
-                <Card.Img src={xrayImg} alt="CT Scan" className="scan-image" />
+                <Card.Img src={ultrasoundImg} alt="CT Scan" className="scan-image" />
                 <Card.ImgOverlay>
                   <div className="scan-details">
                     <Card.Title>MRI Test</Card.Title>
@@ -187,7 +187,7 @@ export default function BookYourScansMainPage() {
             </Col>
             <Col md={4}>
               <Card className="scan-card-main">
-                <Card.Img src={xrayImg} alt="X-Ray" className="scan-image" />
+                <Card.Img src={ctScanImg} alt="X-Ray" className="scan-image" />
                 <Card.ImgOverlay>
                   <div className="scan-details">
                     <Card.Title>ECG Test</Card.Title>
@@ -209,7 +209,7 @@ export default function BookYourScansMainPage() {
           </div>
         </Col>
       </Row>
-      <Row className='d-flex justify-content-center align-items-center'>
+      <Row className='d-flex justify-content-center align-items-center pb-5'>
         <Col md={10}>
           <h1 className='hed1 text-center pb-4'>Sanar Care Scans</h1>
           <p className='text-center para'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum hasbeen the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum hasbeen the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum hasbeen the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>

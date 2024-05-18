@@ -8,6 +8,8 @@ import sec11img from '../../../public/Image/sec114.png';
 import sec2img from '../../../public/Image/sec113.png';
 import sec3img from '../../../public/Image/sec112.png';
 import thumbimg from '../../../public/Image/thumb.png';
+import IMG1 from '../../../public/Image/test.png';
+
 
 export default function Section11() {
   const testimonials = [
@@ -55,7 +57,10 @@ export default function Section11() {
     <Col md={5}>
       <h3 className="hed3 text-white">
         Hear from our customers about their experiences with Sanar Care's services. We value feedback regarding their visits to our labs.
+
       </h3>
+      <img src={IMG1} alt="" className='img-fluid'/>
+      
     </Col>
     <Col md={7}>
       <div className="swiper-container pb-5">

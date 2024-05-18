@@ -13,8 +13,8 @@ export default function Health() {
                     <div className="px-5">
                         <h2 className="hed2">Explore Our Range of</h2>
                         <h2><span className="hed1" style={{ color: "#FF851B" }}> Health Packages</span><span className="hed2"> Today! </span></h2>
-                        <h2 className="hed2"> From comprehensive </h2>
-                        <h2 > <span className="hed1" style={{ color: "#FF851B" }}>check-ups to  </span>     <span className="hed2">specialized </span></h2>
+                        <h2 className="hed2"> <span className="hed2"> From comprehensive</span>  </h2>
+                        <h2 >      <span className="hed2">specialized </span></h2>
                         <h2 className="hed2"> screenings, we tailor  </h2>
                         <h2 className="hed2"> packages to <span className="hed1" style={{ color: "#FF851B" }}>suit your</span>  <br />
                             needs</h2>
@@ -24,9 +24,7 @@ export default function Health() {
             <SectionFirstHealth />
 
             <SectioniindHealth />
-            <br />
-            <br />
-            <br />
+         
             <Section10 />
             
             <Section13 />

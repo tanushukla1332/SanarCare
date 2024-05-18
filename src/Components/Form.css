@@ -10,6 +10,9 @@
     transform: translateY(-70%); /* Center vertically */
     border-radius: 8px !important;
 }
+.form-control-search-bar{
+    border: 1px solid gray!important;
+}
 .img-form {
     position: absolute !important;
     left: 30px !important; /* Adjust from left to right */

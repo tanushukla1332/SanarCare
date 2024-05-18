@@ -149,8 +149,6 @@ export default function Blog() {
             </Row>
             <br />
             <Section11/>
-            <br />
-            <br />
             <Section10/>
 
         </>

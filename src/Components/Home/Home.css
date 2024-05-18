@@ -16,36 +16,42 @@
   color: #f2f2f2;
   font-weight: 500;
   font-size: 20px;
+
 }
   .banner h1 {
-    color: #5E5E5E;
+    color: #585454;
+    text-align: center;
     font-weight: bolder;
-    font-size: 50px;
+    font-size:65px;
   }
   
   .banner h1 span.scan{
     color: #FF631A;
-    font-size: 60px;
+    font-size: 75px;
     font-weight: bold;
   }
   
   .banner h1 span.reflects {
     color: #FF631A;
-    font-size: 60px;
+    font-size: 75px;
     font-weight: bold;
   }
   
   .banner h1 span.health {
-    color: #5E5E5E;
+    color: #585454;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 65px;
   }
   .banner h1 p.Priority{
     color: #FF631A;
-    font-size: 65px;
+    font-size: 75px;
     font-weight: bold;
   }
-  
+  .form-control-seacrhbar{
+    border: 1px solid #58545486!important;
+    box-shadow: none !important;
+    border-radius: 10px !important;
+}
   .radiology-data {
     height:150PX !important;
     display: flex;
@@ -53,12 +59,22 @@
     align-items: center;
     flex-direction: column;
     width:150px;
+    transition: 0.3s ease-in;
+}
+.radiology-data:hover{
+  transform: scale(0.7) !important;
 }
 .rd-img{
   width:60%;
   height: 60%;
 }
-
+.for-newtry{
+  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.127) !important;
+  top: 370px;
+  left: 160px;
+  background-color: white;
+  border-radius: 5px;
+}
 .ndsectionwhysanarCare{
     box-shadow: 0px 15px 40px 15px rgb(154, 170, 207,25%);
     border-radius:8px;
@@ -68,19 +84,32 @@
     align-items: center;
     transition: 0.3ms ease-in;
     background-color: white;
-    width: 200px ;
-    height: 200px;
+    width: 170px ;
+    height: 170px;
     transition: 0.3s ease-in;
 }
 .ndsectionwhysanarCare:hover{
   transform: scale(1.1) !important;
 }
+.scan-card-main{
+  width: 400px !important;
+  height: 382px !important;
+}
 .scan-card-main .card-img-overlay {
   display: flex;
+  width: 400px !important;
+  height: 382px !important;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 0px !important;
+}
+.scan-image{
+  width: 400px !important;
+  height: 382px !important;
+  display: flex !important; 
+  justify-content: center !important;
+  align-items: center !important;
 }
 .icon{
   width: 50px !important;
@@ -217,7 +246,7 @@ padding: 10px;
 .health-div{
   box-shadow: 0px 15px 40px 10px rgb(154, 170, 207,25%);
   padding: 16px;
-  height: 520px;
+  height: 520px !important;
 
 }
 

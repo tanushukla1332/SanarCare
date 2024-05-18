@@ -75,13 +75,14 @@ export default function SectionFirstHealth(){
     return(
         <>
         <Row className='d-flex justify-content-center align-items-center pt-5'>
-            <h1 className='text-center'> <span className="hed2" style={{color:"#FF851B"}}>SANAR CARE</span> <span className="hed2"> Health Tests Packages</span></h1>
+            <h1 className='text-center pb-5'> <span className="hed2" style={{color:"#FF851B"}}>SANAR CARE</span> <span className="hed2"> Health Tests Packages</span></h1>
             <Form className="d-flex justify-content-center">
-                            <div className="position-relative"  style={{width:'80%'}}>
+                            <div className="position-relative"  style={{width:'83%'}}>
                                 <Form.Control
                                     type="search"
                                     aria-label="Search"
-                                    placeholder='search Health Packages'
+                                    placeholder='Search Health Packages'
+                                    className='form-control-seacrhbar'
                                 />
                                 <FaSearch color='#4085AD' className="position-absolute top-50 end-0 translate-middle-y "
                                     style={{ marginRight: "15px" }} />

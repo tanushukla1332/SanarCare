@@ -79,7 +79,7 @@ export default function Section9() {
         <Row className="py-5 d-flex justify-content-center align-items-center">
         <h1 className='hed1 text-center'>HEALTH PACKAGES OFFERS</h1>
         <Col md={10}>
-            <Row className='py-5 d-flex'>
+            <Row className='py-3 d-flex'>
                 {healthdata.slice(0, displayCount).map((data, index) => (
                     <Col key={index} md={4} className='py-3'>
                         <div className='health-div'>

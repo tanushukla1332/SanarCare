@@ -20,7 +20,7 @@ export default function Section8() {
     }}>
       <Col md={12}>
       <h1 className=' text-white hed1 text-center'>Meet Our Expert Team of Doctors</h1>
-      <p className='para  text-white text-center'>Our Team of Diverse Specialists</p>
+      <p className='para  text-white text-center pb-4'>Our Team of Diverse Specialists</p>
         <Swiper
           modules={[Autoplay]}
           spaceBetween={0}

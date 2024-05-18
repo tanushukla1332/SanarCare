@@ -15,7 +15,7 @@ const TestBooking = () => {
           <img src={bgImg} alt="" className="img-fluid" />
         </div>
         <Row className="d-flex justify-content-center align-items-center" >
-        <Col md={3} className="step-column" style={{ position: "absolute", top: "100%", left: "52%", transform: "translate(-20%, -80%)" }}>
+        <Col md={3} className="step-column" style={{ position: "absolute", top: "90%", left: "52%", transform: "translate(-20%, -80%)" }}>
         <div className="step">
           <div className="step-icon d-flex flex-column">
             <img src={thirdImg} alt="" className="img-fluid" />
@@ -28,19 +28,19 @@ const TestBooking = () => {
          
         </div>
       </Col>
-          <Col md={3} className="step-column" style={{ position: "absolute", top: "100%", left: "26%", transform: "translate(-115%, -80%)" }}> 
+          <Col md={3} className="step-column" style={{ position: "absolute", top: "90%", left: "26%", transform: "translate(-115%, -80%)" }}> 
             <div className="step">
               <div className="step-icon d-flex flex-column">
                 <img src={firstImg} alt="" className="img-fluid" />
                 <div className="hed4" style={{ color: '#9ACE59' }}>
                 <p>Click on Book <br /> 
-                appointment button</p>
+                appointment <br/> button</p>
               </div>
               </div>
              
             </div>
           </Col>
-          <Col md={3} className="step-column" style={{ position: "absolute", top: "100%", left: "51%", transform: "translate(-115%, -85%)" }}>
+          <Col md={3} className="step-column" style={{ position: "absolute", top: "95%", left: "51%", transform: "translate(-115%, -85%)" }}>
             <div className="step">
               <div className="step-icon d-flex flex-column" >
                 <img src={fourthImg} alt="" className="img-fluid" />

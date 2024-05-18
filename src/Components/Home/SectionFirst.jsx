@@ -16,10 +16,10 @@ export default function SectionFirst() {
     return (
         <Row className="d-flex justify-content-center align-items-center py-5"
          style={{backgroundColor:"rgba(136, 136, 136, 0.065)" ,zIndex:"1"}}>
-            <h1 className="hed1 text-center ">Our Radiology Services</h1>
+            <h1 className="hed1 text-center pb-5">Our Radiology Services</h1>
             <Col md={12}>
-                <Marquee className='d-flex gap-2'>
-                    <div className="d-flex justify-content-center align-items-center gap-2">
+                <Marquee className='d-flex gap-4'>
+                    <div className="d-flex justify-content-center align-items-center gap-4">
                         <div className='radiologydiv'>
                             <div  className='radiology-data'  style={{ border:"2px solid #FFD0BB",borderRadius:"50%" }}>
                                 <img  src={radi1} className='rd-img img-fluid' /> 

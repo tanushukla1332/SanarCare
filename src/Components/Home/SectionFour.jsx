@@ -8,7 +8,7 @@ import ThirdsecImg from '../../../public/Image/thirdsec.png'
 export default function SectionFour(){
     return(
            
-        <Row   className="d-flex justify-content-center  gap-5">
+        <Row   className="d-flex justify-content-center  gap-5 py-5">
         <Col md={5} className= "py-5" >
         <img src={ThirdsecImg} alt="" className="img-fluid" />  </Col>
         <Col md={5} className= "py-5">
