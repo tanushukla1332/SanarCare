@@ -13,7 +13,7 @@ export default function SectionThree(){
     return(
         <Row className=" d-flex justify-content-center align-itmes-center  py-5">
         <Col md={10}>
-          <h1 className=" hed1 text-center pb-4 hover">Your Scans In Gurugram</h1>
+          <h1 className=" hed1 text-center pb-5 hover">Your Scans In Gurugram</h1>
           <Row className="py-3 d-flex justify-content-center align-itmes-center ">
           <Carousel className="scansIndicators" indicators={false}>
           <Carousel.Item>
@@ -135,7 +135,7 @@ export default function SectionThree(){
             </Carousel>
           </Row>
           <div className="text-center mt-4 d-flex justify-content-center align-items-center ">
-            <Button className="buttonfirst">VIEW MORE DETAILS</Button>
+            <Button className="buttonfirst">VIEW MORE SCANS</Button>
           </div>
         </Col>
       </Row>

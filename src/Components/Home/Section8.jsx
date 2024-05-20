@@ -35,11 +35,11 @@ export default function Section8() {
          
           <SwiperSlide>
             <div className='d-flex justify-content-center align-items-center'>
-              <div className="doctor-card">
+              <div className="doctor-card"  >
                 <img className="img-fluid doctor-image" src={sec8_1} alt="Doctor 2" />
                 <Card className='card-doctor-main'>
                   <Card.Title>
-                    <h3 className='hed3'>Dr. Y.S Rajput</h3>
+                    <h3 className='hed3 '>Dr. Y.S Rajput</h3>
                   </Card.Title>
                   <Card.Text>
                     <p className='para text-black text-center'>Cardiologist</p>

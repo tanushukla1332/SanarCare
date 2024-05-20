@@ -43,3 +43,25 @@
   font-weight: 700;
 }
 
+@media screen and  (max-width:768px) {
+  .hed1{
+    font-size:22px;
+    color: #585454;
+    font-weight: 600;
+  }
+  .hed4{
+    font-size:14px;
+    font-weight: 550;
+  }
+  .para{
+    font-size: 10px ;
+    font-weight:450 ;
+  }
+  .hed3{
+    font-size: 12px;
+    font-weight: 550;
+
+  }
+  
+}
+

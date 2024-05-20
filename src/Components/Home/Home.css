@@ -4,45 +4,45 @@
   top: 0;
   z-index: 1000; /* Adjust z-index as needed */
 }
-.drop-down>span a{
+
+.dropdown-toggle::after {
+  color: white !important;
+}
+.drop-down{
   text-decoration: none !important;
   color: #5E5E5E;
   font-weight: 500;
   font-size: 20px;
 }
 
-.navbar-header .nav-link a {
+.nav-link{
   text-decoration: none !important;
   color: #f2f2f2;
   font-weight: 500;
-  font-size: 20px;
-
+  font-size: 19px;
 }
-  .banner h1 {
+.dropdown-menu.show {
+  font-weight: 500;
+  font-size: 19px;
+}
+  .banner{
     color: #585454;
     text-align: center;
     font-weight: bolder;
     font-size:65px;
   }
-  
-  .banner h1 span.scan{
+  .banner span.scan{
     color: #FF631A;
     font-size: 75px;
     font-weight: bold;
   }
   
-  .banner h1 span.reflects {
+  .banner span.reflects {
     color: #FF631A;
     font-size: 75px;
     font-weight: bold;
   }
-  
-  .banner h1 span.health {
-    color: #585454;
-    font-weight: bold;
-    font-size: 65px;
-  }
-  .banner h1 p.Priority{
+  .banner  p.Priority{
     color: #FF631A;
     font-size: 75px;
     font-weight: bold;
@@ -60,6 +60,8 @@
     flex-direction: column;
     width:150px;
     transition: 0.3s ease-in;
+    border-radius: 50% !important;
+ 
 }
 .radiology-data:hover{
   transform: scale(0.7) !important;
@@ -70,10 +72,9 @@
 }
 .for-newtry{
   box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.127) !important;
-  top: 370px;
-  left: 160px;
   background-color: white;
   border-radius: 5px;
+  margin-top: -100px;
 }
 .ndsectionwhysanarCare{
     box-shadow: 0px 15px 40px 15px rgb(154, 170, 207,25%);
@@ -84,9 +85,10 @@
     align-items: center;
     transition: 0.3ms ease-in;
     background-color: white;
-    width: 170px ;
+    width: 200px ;
     height: 170px;
     transition: 0.3s ease-in;
+    text-transform: capitalize !important;
 }
 .ndsectionwhysanarCare:hover{
   transform: scale(1.1) !important;
@@ -208,6 +210,7 @@ padding: 10px;
 }
 .doctor-card {
   position: relative;
+ 
 }
 .doctor-image {
   position: absolute;
@@ -218,6 +221,7 @@ padding: 10px;
   border-radius: 50%;
   object-fit: cover;
   z-index: 1;
+  
 }
 .card-doctor-main{
   margin-top: 100px;
@@ -227,9 +231,13 @@ padding: 10px;
   width:400px;
   height: 300px;
   transition: 0.3s ease-in;
+
+
+
 }
 .card-doctor-main:hover{
   transform: scale(1.1);
+  
 
 }
 .card-doctor-main .card-title {
@@ -241,6 +249,7 @@ padding: 10px;
 .card-doctor-main  .card-text {
   text-align: center;
   margin-bottom: 10px;
+  color: #fff;
  
 }
 .health-div{
@@ -309,23 +318,32 @@ padding: 10px;
   text-align: center;
   margin-bottom: 2rem;
 }
-
-.step {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.step-column1{
+  position: absolute;
+   top: 50px;
+   left: 70px;
+   text-align: center;
+}
+.step-column2{
+  position: absolute;
+  top: 50px;
+  left: 365px;
   text-align: center;
-  width: 300px ;
-  height: 350px;
 }
-.step-icon {
-  border-radius: 50%;
-  display: flex;
-  justify-content:center !important;
-  align-items: center;
-  margin-bottom: 0.5rem;
-  padding: 30px !important;
+.step-column3{
+  position: absolute;
+  top: 50px;
+  left: 678px;
+  text-align: center;
 }
+.step-column4{
+  position: absolute;
+  top: 50px;
+  left: 978px;
+  text-align: center;
+}
+
+
 .Card-Healthscan{
 border-radius:10px;
 transition: 0.3s ease-in;
@@ -350,7 +368,119 @@ height: 500px;
   color: white! important;
   border-radius: 0px !important;
   margin-top: 20px;
+
   
 
+}
+
+/* Home page banner text  */
+@media (max-width: 767px) {
+  .banner  span.scan,
+  .banner  span.reflects,
+  .banner span.Priority,
+  .banner span.health
+ {
+    font-size: 17px;
+  }
+
+  .banner span.health {
+    font-size: 15px;
+  }
+  .banner  {
+    font-size:15px;
+    text-align: left;
+    padding-left: 20px;
+  }
+   .banner  p.Priority{
+    font-size: 15px;
+
+  }
+  .row-bac{
+    height:auto!important;
+    text-align: start !important;
+  }
+  .for-newtry{
+    margin-top: 0px !important;
+    width: 360px !important;
+    height: 100px !important;
+
+  }
+  .for-newtry>div>img{
+ display: none !important;
+  }
+  .for-mob{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    text-align: center;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .radiology-data{
+    width: 80px !important;
+    height: 80px !important;
+    padding: 0px !important;
+  }
+  .ndsectionwhysanarCare{
+    width: 100px ;
+    height: 85px;
+    padding:5px 10px;
+  }
+  .ndsectionwhysanarCare>img{
+    width: 30px !important; 
+    height: 30px !important; 
+  }
+ 
+}
+
+/* Tablets (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner h1 span.scan,
+  .banner h1 span.reflects,
+  .banner h1 span.Priority {
+    font-size: 50px;
+  }
+
+  .banner h1 span.health {
+    font-size: 45px;
+  }
+}
+
+/* iPad (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .banner h1 span.scan,
+  .banner h1 span.reflects,
+  .banner h1 span.Priority ,
+  .banner h1 span.health{
+    font-size: 60px;
+  }
+
+  .banner h1 span.health {
+    font-size: 55px;
+  }
+}
+
+/* Larger screens (greater than 1024px) */
+@media (min-width: 1025px) {
+  .banner h1 span.scan,
+  .banner h1 span.reflects,
+  .banner h1 span.Priority {
+    font-size: 75px;
+  }
+
+  .banner h1 span.health {
+    font-size: 65px;
+  }
+}
+@media (min-width: 1400px) {
+  .header{
+    height:50px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .row-bac{
+    height:480px !important;
+
+  }
 }
 

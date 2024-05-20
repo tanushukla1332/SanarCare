@@ -13,6 +13,10 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import { MdArrowRight } from "react-icons/md";
+import { useNavigate } from 'react-router-dom';
+
+
+
 
 
 
@@ -20,97 +24,85 @@ import { MdArrowRight } from "react-icons/md";
 
 
 export default function Header() {
+    const history = useNavigate();
 
-
+    const handleDropdownClick = () => {
+        history('/bookyourscans');
+    };
     return (
         <>
-            <Navbar bg="light" expand="lg" data-bs-theme="light" style={{ height: "75px" }}>
-                <Container>
+            <Navbar bg="light" expand="lg" className="d-none d-lg-flex" style={{ maxHeight: "80px" }}>
+                <Container fluid>
                     <Navbar.Brand href="#home">
-                        <img src={logo} alt="" style={{ height: "50px" }} />
+                        <img src={logo} alt="" style={{ height: "50px" }} className='ps-5' />
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="navbarScroll" />
-                    <Navbar.Collapse id="navbarScroll">
-                        <Nav className=" d-flex justify-content-center align-items-center  mx-auto gap-3
-                   mx-auto my-2 my-lg-0"
-                            style={{ maxHeight: '100px' }}
-                            navbarScroll>
-                            <Nav.Link><img src={Logo2} alt="" className='img-fluid pt-4' style={{ maxHeight: "130px" }} /></Nav.Link>
-                            <Nav.Link href="#home" className='d-flex align-items-center text-center justify-content-center gap-2'>
-                                <img src={user} alt="" className='img-fluid' style={{ width: "20px", height: "20px" }} />
-                                <p className='mb-0' style={{ fontSize: '14px', fontWeight: '550', color: "#252525" }}>Login/Register</p>
-                            </Nav.Link>
-                            <Nav.Link href="#home" className='d-flex align-items-center  gap-2'>
-                                <img src={phone} alt="" className='img-fluid' style={{ width: "20px", height: "20px" }} />
-                                <div className='ml-2'>
-                                    <p style={{ fontSize: '12px', fontWeight: 'light', color: "#252525", margin: "0" }}>Customer Support</p>
-                                    <p style={{ fontSize: '14px', fontWeight: '550', color: "#252525", margin: "0" }}>7042148149</p>
-                                </div>
-                            </Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
+                    <Nav className="mx-auto d-flex gap-0">
+                        <Nav.Link><img src={Logo2} alt="" className='img-fluid pt-5' /></Nav.Link>
+                        <Nav.Link href="#home" className='d-flex align-items-center gap-3'>
+                            <img src={user} alt="" className='img-fluid' style={{ width: "20px", height: "20px" }} />
+                            <p className='mb-0' style={{ fontSize: '14px', fontWeight: '550', color: "#252525" }}>Login/Register</p>
+                        </Nav.Link>
+                        <Nav.Link href="#home" className='d-flex align-items-center  gap-3'>
+                            <img src={phone} alt="" className='img-fluid' style={{ width: "20px", height: "20px" }} />
+                            <div className='ml-2'>
+                                <p style={{ fontSize: '12px', fontWeight: 'light', color: "#252525", margin: "0" }}>Customer Support</p>
+                                <p style={{ fontSize: '14px', fontWeight: '550', color: "#252525", margin: "0" }}>7042148149</p>
+                            </div>
+                        </Nav.Link>
+                    </Nav>
                 </Container>
                 <br />
                 <br />
             </Navbar>
-            <Navbar expand="lg" style={{ backgroundColor: "#46A4D9", height: "55px" }} >
-                <Container fluid>
+            <Navbar expand="lg" style={{ backgroundColor: "#46A4D9",}}  className='header'>
+                <Container fluid  className='m-0 p-0'>
+                    <Navbar.Brand as={Link} to="/" className="d-lg-none">
+                        <img src={logo} alt="" style={{ height: "50px" }} />
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
-                        <Nav
-                            className="
-                             d-flex justify-content-center align-items-center  mx-auto gap-4
-                               mx-auto my-2 my-lg-0 text-light navbar-header"
-                            style={{ maxHeight: '100px' }}
-                            navbarScroll
-                        >
-                            <Navbar.Brand>
-                                <Link to='/'><img src={Home} alt="" style={{ width: "30px", height: "30px" }} />
-                                </Link> </Navbar.Brand>
-                            <Nav.Link className='text-light' > <Link to='/'>Home</Link> </Nav.Link>
-
-                            <NavDropdown title={<Link to="/bookyourscans" className="text-light" style={{ fontWeight: '500', fontSize: '18px', color: "white" }}>Book Your Scans</Link>} id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1" className='d-flex justify-content-between drop-down'>
-                                    <span><Link to='/bookyourscans/mri' >MRI SCANS</Link>
-                                    <MdArrowRight />  </span> {/* Add the dropdown icon */}
+                        <Nav className="mx-auto p-0 d-flex align-items-center gap-1 gap-lg-2 gap-xl-3 navbar-header"  navbarScroll>
+                            <Nav.Link as={Link} to="/" className="d-none d-lg-flex">
+                                <img src={Home} alt="" className='img-fluid' style={{ width: "60px", height: "50px" }} />
+                            </Nav.Link>
+                            <Nav.Link as={Link} to="/">Home</Nav.Link>
+                            <NavDropdown title="Book Scans" id="basic-nav-dropdown" onClick={handleDropdownClick}>
+                                <NavDropdown.Item as={Link} to="/bookyourscans/mri">
+                                    MRI SCANS <MdArrowRight />
                                 </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between drop-down'>
-                                    <span> <Link>CT SCANS</Link></span> <MdArrowRight /> {/* Add the dropdown icon */}
+                                <NavDropdown.Item as={Link} to="/bookyourscans/ct">
+                                    CT SCANS <MdArrowRight />
                                 </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between drop-down'>
-                                    <span><Link>CBCT</Link></span> <MdArrowRight /> {/* Add the dropdown icon */}
+                                <NavDropdown.Item as={Link} to="/bookyourscans/cbct">
+                                    CBCT <MdArrowRight />
                                 </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between drop-down'>
-                                    <span><Link>BMT</Link></span> <MdArrowRight /> {/* Add the dropdown icon */}
+                                <NavDropdown.Item as={Link} to="/bookyourscans/bmt">
+                                    BMT <MdArrowRight />
                                 </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between drop-down' >
-                                    <span><Link>Ultrasound</Link></span> <MdArrowRight /> {/* Add the dropdown icon */}
+                                <NavDropdown.Item as={Link} to="/bookyourscans/ultrasound">
+                                    Ultrasound <MdArrowRight />
                                 </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.2" className='d-flex justify-content-between drop-down'>
-                                    <span><Link>Cardiology</Link></span> <MdArrowRight /> {/* Add the dropdown icon */}
+                                <NavDropdown.Item as={Link} to="/bookyourscans/cardiology">
+                                    Cardiology <MdArrowRight />
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link className='text-light'><Link to="/doctors">Our Doctors </Link></Nav.Link>
-                            <Nav.Link className='text-light'><Link to="/health">Health Packages</Link> </Nav.Link>
-                            <Nav.Link className='text-light' ><Link to="blog">Blogs</Link> </Nav.Link>
-                            <Nav.Link className='text-light'><Link to='/contact'>Reach Us</Link> </Nav.Link>
+                            <Nav.Link as={Link} to="/doctors">Our Doctors</Nav.Link>
+                            <Nav.Link as={Link} to="/health">Health Packages</Nav.Link>
+                            <Nav.Link as={Link} to="/blog">Blogs</Nav.Link>
+                            <Nav.Link as={Link} to="/contact">Reach Us</Nav.Link>
+                            <Form className="d-lg-flex d-none">
+                                <div className="position-relative">
+                                    <Form.Control
+                                        type="search"
+                                        aria-label="Search"
+                                        placeholder='search your scans'
+                                        className="ms-lg-2"
+
+                                    />
+                                    <FaSearch color='#4085AD' className="position-absolute top-50 end-0 translate-middle-y" style={{ marginRight: "15px" }} />
+                                </div>
+                            </Form>
                         </Nav>
-                        <Form className="d-flex">
-                            <div className="position-relative">
-                                <Form.Control
-                                    type="search"
-                                    aria-label="Search"
-                                    placeholder='search your scans'
-                                />
-                                <FaSearch color='#4085AD' className="position-absolute top-50 end-0 translate-middle-y "
-                                    style={{ marginRight: "15px" }} />
-                            </div>
-                        </Form>
 
 
                     </Navbar.Collapse>

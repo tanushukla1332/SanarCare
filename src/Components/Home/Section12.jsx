@@ -8,19 +8,31 @@ import fourthImg from '../../../public/Image/Sectw2.png';
 
 const TestBooking = () => {
   return (
-    <Row className="test-booking py-5 justify-content-center align-items-center" style={{backgroundColor:"#DEF0FF"}}>
+    <Row className="d-lg-flex d-none py-5 justify-content-center align-items-center" style={{backgroundColor:"#DEF0FF"}}>
       <h1 className="hed1 text-center pb-5">How to Book Your Tests</h1>
       <Col md={10} style={{position:"relative"}}>
         <div>
           <img src={bgImg} alt="" className="img-fluid" />
         </div>
-        <Row className="d-flex justify-content-center align-items-center" >
-        <Col md={3} className="step-column" style={{ position: "absolute", top: "90%", left: "52%", transform: "translate(-20%, -80%)" }}>
-        <div className="step">
-          <div className="step-icon d-flex flex-column">
+        <Row className="d-lg-flex d-none  justify-content-center align-items-center" >
+        
+          <Col md={3} > 
+            <div className="step-column1">
+              <div className="step-icon">
+                <img src={firstImg} alt="" className="img-fluid" />
+                <div className="hed4" style={{ color: '#9ACE59' }}>
+                Book Click on <br/> Button
+              </div>
+              </div>
+             
+            </div>
+          </Col>
+          <Col md={3}>
+        <div className="step-column2">
+          <div className="step-icon ">
             <img src={thirdImg} alt="" className="img-fluid" />
-            <div className="hed4 text-center pt-2" style={{ color: '#2FAED4' }}>
-                Click on Submit
+            <div className="hed4 " style={{ color: '#2FAED4' }}>
+                Click On  Submit
                 </div>
 
            
@@ -28,23 +40,11 @@ const TestBooking = () => {
          
         </div>
       </Col>
-          <Col md={3} className="step-column" style={{ position: "absolute", top: "90%", left: "26%", transform: "translate(-115%, -80%)" }}> 
-            <div className="step">
-              <div className="step-icon d-flex flex-column">
-                <img src={firstImg} alt="" className="img-fluid" />
-                <div className="hed4" style={{ color: '#9ACE59' }}>
-                <p>Click on Book <br /> 
-                appointment <br/> button</p>
-              </div>
-              </div>
-             
-            </div>
-          </Col>
-          <Col md={3} className="step-column" style={{ position: "absolute", top: "95%", left: "51%", transform: "translate(-115%, -85%)" }}>
-            <div className="step">
-              <div className="step-icon d-flex flex-column" >
+          <Col md={3}>
+            <div className="step-column3">
+              <div className="step-icon" >
                 <img src={fourthImg} alt="" className="img-fluid" />
-                <div className="hed4 text-center pt-2" style={{ color: '#EA8238' }}>
+                <div className="hed4 " style={{ color: '#EA8238' }}>
                 Fill enquiry form
                 </div>
                 
@@ -52,14 +52,13 @@ const TestBooking = () => {
              
             </div>
           </Col>
-          <Col md={3} className="step-column" 
-          style={{ position: "absolute", top: "100%",right: "-25.5%", transform: "translate(-115%, -90%)" }}>
-            <div className="step">
-              <div className="step-icon d-flex flex-column" >
+          <Col md={3} 
+          >
+            <div className="step-column4">
+              <div className="step-icon " >
                 <img src={secondImg} alt="" className="img-fluid" />
               <div className="hed4 " style={{ color: '#D4458B' }}>
-                <p>
-                Sanar Care will call  <br />to book your test.</p>
+                 Sanar Care will call  <br />to book your test.
                 </div>
               </div>
             

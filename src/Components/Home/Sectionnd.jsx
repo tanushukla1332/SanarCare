@@ -15,17 +15,17 @@ export default function SectionNd() {
     return (
         <>
 
-            <Row className="d-flex justify-content-center align-items-center py-5" style={{ backgroundColor: "#DEF0FF" }}>
+            <Row className="d-flex justify-content-center align-items-center py-lg-5 py-3"  style={{ backgroundColor: "#DEF0FF" }}>
                 <Col md={10}>
-                    <h1 className="hed1 pb-3 text-center">Why sanar Care</h1>
-                    <p className="para pb-4">Sanar Care all about giving you the best care possible when it comes to radiology. We're not just about scans; we're here to support you every step
+                    <h1 className="hed1 pb-lg-3 pb-2 text-center">Why sanar Care</h1>
+                    <p className="para pb-lg-5 pb-3">Sanar Care all about giving you the best care possible when it comes to radiology. We're not just about scans; we're here to support you every step
                         of the way in your health journey. From the moment you walk in, we'll make sure you feel taken care of and provide you with the most advanced
                         services available. Your health is our priority, and we're committed to making sure you get the superior care you deserve.</p>
                     <div>
-                        <div className='d-flex flex-col flex-sm-row  gap-3 justify-content-center'>
+                        <div className='d-flex flex-col flex-sm-row  gap-lg-3  gap-1 justify-content-center'>
                             <div className='ndsectionwhysanarCare'>
                                 <img src={ndsec10img} alt="" className='img-fluid' />
-                                <p className='hed3 para text-black text-center '>100% Vacinated
+                                <p className='para text-black text-center '>100% Vacinated
                                     Staff</p>
                             </div>
                             <div className='ndsectionwhysanarCare'>
@@ -33,7 +33,7 @@ export default function SectionNd() {
                                 <p className='para text-black text-center'>Hassle-free booking
                                     </p>
                             </div>
-                            <div className='ndsectionwhysanarCare'>
+                            <div className='ndsectionwhysanarCare d-md-flex d-none'>
                                 <img src={ndsec2img} alt="" className='img-fluid ' />
                                 <p className=' para text-black text-center'>Home blood sample
                                     collection </p>
@@ -50,7 +50,7 @@ export default function SectionNd() {
 
                             </div>
                         </div>
-                        <div className='d-flex flex-col flex-sm-row   gap-3 pt-3 justify-content-center'>
+                        <div className='d-flex flex-col flex-sm-row    gap-lg-3  gap-1 pt-3 justify-content-center'>
                             <div className='ndsectionwhysanarCare'>
                                 <img src={ndsec3img} alt="" className='img-fluid' />
                                 <p className=' para text-black text-center pt-2'>
@@ -64,7 +64,7 @@ export default function SectionNd() {
                                 <p className=' para text-black text-center'> Pick & Drop Facility</p>
 
                             </div>
-                            <div className='ndsectionwhysanarCare'>
+                            <div className='ndsectionwhysanarCare  d-md-flex d-none'>
                                 <img src={ndsec5img} alt="" className='img-fluid '/>
                                 <p className=' para text-black text-center'> NABL
                                     Accredited-Labs 
