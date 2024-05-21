@@ -4,7 +4,7 @@ import bgimg7 from '../../../public/Image/Secseven.png'
 export default function Section7(){
     return(
         <>
-        <Row className='d-flex justify-content-center align-items-center py-5 gap-5'>
+        <Row className='d-flex justify-content-center align-items-center py-lg-5  py-md-5 py-xl-5 py-3  gap-xl-5 gap-lg-5 gap-md-5 gap-2'>
         <Col md={5}> 
         <h1 className='hed1'>Sanar Care 
         Diagnostic Centre 

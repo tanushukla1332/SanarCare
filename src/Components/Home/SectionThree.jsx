@@ -11,14 +11,14 @@ import radi5 from '../../../public/Image/radi1 (5).png';
 
 export default function SectionThree(){
     return(
-        <Row className=" d-flex justify-content-center align-itmes-center  py-5">
+        <Row className=" d-md-flex justify-content-center align-itmes-center  py-lg-5 py-xl-5 py-md-5 py-4">
         <Col md={10}>
-          <h1 className=" hed1 text-center pb-5 hover">Your Scans In Gurugram</h1>
+          <h1 className=" hed1 text-center pb-xl-5 pb-lg-5 pb-md-5 pb-0 hover">Your Scans In Gurugram</h1>
           <Row className="py-3 d-flex justify-content-center align-itmes-center ">
           <Carousel className="scansIndicators" indicators={false}>
           <Carousel.Item>
           <div className="d-flex justify-content-center align-items-center gap-0">
-            <Col md={4}>
+            <Col md={4} className='d-md-flex d-none'>
               <Card className="scan-card-main">
                 <Card.Img src={xrayImg} alt="Ultrasound"  className='scan-image'/>
                 <Card.ImgOverlay>
@@ -30,7 +30,7 @@ export default function SectionThree(){
                     <Card.Text className="text-center">Prohealth Imaging Gurgaon</Card.Text>
                     <Card.Text className="price text-center">Start ₹496</Card.Text>
                     <div className="text-center my-4  d-flex justify-content-center align-items-center">
-                    <Button className="buttonfirst">Book Appointment</Button>
+                    <Button className="buttonfirst scan-button-sm">Book Appointment</Button>
                   </div>
                   </div>
                 </Card.ImgOverlay>
@@ -48,13 +48,13 @@ export default function SectionThree(){
                   <Card.Text className="text-center">Prohealth Imaging Gurgaon</Card.Text>
                   <Card.Text className="price text-center">Start ₹496</Card.Text>
                   <div className="text-center my-4  d-flex justify-content-center align-items-center ">
-                  <Button className="buttonfirst">Book Appointment</Button>
+                  <Button className="buttonfirst scan-button-sm">Book Appointment</Button>
                 </div>
                 </div>
               </Card.ImgOverlay>
             </Card>
           </Col>
-            <Col md={4}>
+            <Col md={4} >
               <Card className="scan-card-main">
                 <Card.Img src={ctScanImg} alt="X-Ray"  className="scan-image" />
                 <Card.ImgOverlay>
@@ -66,7 +66,7 @@ export default function SectionThree(){
                     <Card.Text className="text-center">Prohealth Imaging Gurgaon</Card.Text>
                     <Card.Text className="price text-center">Start ₹600</Card.Text>
                     <div className="text-center my-4  d-flex justify-content-center align-items-center ">
-                      <Button className="buttonfirst">Book Appointment</Button>
+                      <Button className="buttonfirst scan-button-sm">Book Appointment</Button>
                     </div>
                   </div>
                 </Card.ImgOverlay>
@@ -75,12 +75,12 @@ export default function SectionThree(){
             </div>
             </Carousel.Item>
             <Carousel.Item >
-            <div  className="d-flex justify-content-center align-items-center gap-3">
+            <div  className="d-flex justify-content-center align-items-center gap-lg-3  gap-xl-3 gap-1">
             <Col md={4}>
-              <Card className="scan-card-main">
+              <Card className="scan-card-main ">
                 <Card.Img src={xrayImg} alt="Ultrasound" />
                 <Card.ImgOverlay>
-                  <div className="scan-details">
+                  <div className="scan-details"> 
                     <Card.Title>PT SCAN</Card.Title>
                     <div className="icon-container">
                     <img src={radi3} alt="Icon" className="icon" />
@@ -88,13 +88,13 @@ export default function SectionThree(){
                     <Card.Text className="text-center">Prohealth Imaging Gurgaon</Card.Text>
                     <Card.Text className="price text-center">Start ₹496</Card.Text>
                     <div className="text-center my-4  d-flex justify-content-center align-items-center ">
-                      <Button  className="buttonfirst">Book Appointment</Button>
+                      <Button  className="buttonfirst scan-button-sm">Book Appointment</Button>
                     </div>
                   </div>
                 </Card.ImgOverlay>
               </Card>
             </Col>
-            <Col md={4}>
+            <Col md={4} className='d-md-flex d-none'>
               <Card className="scan-card-main">
                 <Card.Img src={ultrasoundImg} alt="CT Scan"  className="scan-image" />
                 <Card.ImgOverlay>
@@ -106,7 +106,7 @@ export default function SectionThree(){
                     <Card.Text className="text-center">Prohealth Imaging Gurgaon</Card.Text>
                     <Card.Text className="price text-center">Start ₹700</Card.Text>
                     <div className="text-center my-4  d-flex justify-content-center align-items-center ">
-                      <Button className="buttonfirst">Book Appointment</Button>
+                      <Button className="buttonfirst scan-button-sm">Book Appointment</Button>
                     </div>
                   </div>
                 </Card.ImgOverlay>
@@ -124,7 +124,7 @@ export default function SectionThree(){
                     <Card.Text className="text-center">Prohealth Imaging Gurgaon</Card.Text>
                     <Card.Text className="price text-center">Start ₹600</Card.Text>
                     <div className="text-center my-4  d-flex justify-content-center align-items-center ">
-                      <Button className="buttonfirst">Book Appointment</Button>
+                      <Button className="buttonfirst scan-button-sm">Book Appointment</Button>
                     </div>
                   </div>
                 </Card.ImgOverlay>

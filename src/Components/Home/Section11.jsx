@@ -50,23 +50,23 @@ export default function Section11() {
       quote: 'Thank you so much SANAR CARE: Diagnostic and Pathology Lab in Gurgaon. I do really appreciate your services and timing. Thank you!',
     },
   ];
+    const slidesPerView = window.innerWidth < 768 ? 1 : 3;
 
   return (
-    <Row className="section11-container py-5">
-    <h1 className='hed1 text-center text-white pb-5'>Patient Testimonials</h1>
-    <Col md={5}>
-      <h3 className="hed3 text-white">
+    <Row className="section11-container py-lg-5 py-md-5 py-xl-5 py-3">
+    <h1 className='hed1 text-center text-white pb-lg-5 pb-xl-5 pb-md-5 pb-3'>Patient Testimonials</h1>
+    <Col md={5}  className='d-md-block d-none'>
+      <h3 className="hed3 text-white text-center">
         Hear from our customers about their experiences with Sanar Care's services. We value feedback regarding their visits to our labs.
 
       </h3>
       <img src={IMG1} alt="" className='img-fluid'/>
-      
     </Col>
-    <Col md={7}>
+    <Col md={7}> 
       <div className="swiper-container pb-5">
         <Swiper
           spaceBetween={10}
-          slidesPerView={3}
+          slidesPerView={slidesPerView}
           loop={true}
           autoplay={{ delay: 1000, disableOnInteraction: false }}
           modules={[Pagination, Autoplay]}

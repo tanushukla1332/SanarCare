@@ -10,11 +10,11 @@ import fifthsecimg1 from '../../../public/Image/sixthsecimg6.png';
 export default function SectionFive(){
     return(
         <>
-        <Row className='d-flex justify-content-center align-items-center py-5'
+        <Row  className='d-md-flex flex-sm-row justify-content-center align-items-center gap-4 py-xl-4  py-lg-4 py-md-4 py-4 '
        >
         <Col md={10}>
-        <h1 className='text-center hed1 pb-5'>Are you keeping up with your preventive care?</h1>
-        <div className='d-flex justify-content-center align-items-center gap-4'>
+        <h1 className='text-center hed1 pb-xl-5 pb-lg-5 pb-md-5 pb-3'>Are you keeping up with your preventive care?</h1>
+        <div className='d-flex  flex-sm-row align-items-center gap-xl-4  gap-lg-4 gap-md-4 gap-2  justify-content-center'>
         <div className='fifthsec' style={{backgroundColor:"#FF5F1B4d"}}>
         <img src={fifthsecimg1} alt="" className='img-fluid' />
         <h4 className='hed3 text-center'>Early Detection</h4>
@@ -32,7 +32,7 @@ export default function SectionFive(){
         heart disease, enabling interventions 
         to prevent their development.</p>
         </div>
-        <div className='fifthsec'  style={{backgroundColor:"#99E6FF"}}>
+        <div className='fifthsec d-md-flex d-none'  style={{backgroundColor:"#99E6FF"}}>
         <img src={fifthsecimg3} alt="" className='img-fluid'   style={{width:"76px"}}/>
         <h4 className='hed3 text-center'>Peace of Mind</h4>
         <p className='para text-center'>Knowing that you're taking proactive 
@@ -41,8 +41,8 @@ export default function SectionFive(){
         </div>
 
         </div>
-        <div className='d-flex justify-content-center align-items-center gap-4 pt-4'>
-        <div className='fifthsec' style={{backgroundColor:"#99E6FF"}}>
+        <div className='d-flex  flex-sm-row align-items-center gap-xl-4  gap-lg-4 gap-md-4 gap-2 justify-content-center pt-4'>
+        <div className='fifthsec ' style={{backgroundColor:"#99E6FF"}}>
         <img src={fifthsecimg4} alt="" className='img-fluid'  style={{width:"62px"}} />
         <h4 className='hed3 text-center'>Cost Savings</h4>
         <p className='para text-center'>Detecting health problems early can 
@@ -55,7 +55,7 @@ export default function SectionFive(){
         <h4 className='hed3 text-center'>Personalized Care</h4>
         <p className='para text-center'>Radiology check-ups can be tailored to individual needs based on factors like  age, gender,ensuring personalized and targeted Healthcare.</p>
         </div>
-        <div className='fifthsec' style={{backgroundColor:"#0021ce4d"}}>
+        <div className='fifthsec d-md-flex d-none' style={{backgroundColor:"#0021ce4d"}}>
         <img src={fifthsecimg6} alt="" className='img-fluid'   style={{width:"85px"}}/>
         <h4 className='hed3 text-center'>Improved Quality of Life</h4>
         <p className='para text-center'>By identifying and addressing health 

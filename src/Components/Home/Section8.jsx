@@ -13,18 +13,19 @@ import fifthd2ctr from '../../../public/Image/Fifth4-1.webp';
 import fifthd3ctr from '../../../public/Image/Fifth4.webp'
 
 export default function Section8() {
+  const slidesPerView = window.innerWidth < 768 ? 1 : 3;
   return (
-    <Row className="py-5 d-flex justify-content-center align-items-center" style={{
+    <Row className="py-lg-5  py-md-5 py-xl-5 py-3 d-flex justify-content-center align-items-center" style={{
       backgroundImage: `linear-gradient(#00000059, #00000059), url(${bgimg8})`,
       backgroundSize: 'cover'
     }}>
-      <Col md={12}>
+      <Col md={12} xs={12}>
       <h1 className=' text-white hed1 text-center'>Meet Our Expert Team of Doctors</h1>
-      <p className='para  text-white text-center pb-4'>Our Team of Diverse Specialists</p>
+      <p className='para  text-white text-center pb-lg-4 pb-xl-4 pb-md-4 pb-2'>Our Team of Diverse Specialists</p>
         <Swiper
           modules={[Autoplay]}
-          spaceBetween={0}
-          slidesPerView={3}
+          spaceBetween={10}
+          slidesPerView={slidesPerView}
           loop={true}
           autoplay={{
             delay: 1000,

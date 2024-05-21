@@ -19,8 +19,8 @@ export default function SectionSix() {
          
         }}
       >
-        <Row className='d-flex justify-content-center align-items-center py-5 px-0'>
-          <Col md  className='px-0'>
+        <Row className='d-flex justify-content-center align-items-center  py-lg-5 py-xl-5 py-md-5 py-2 px-0'>
+          <Col md  sm={10}  xs={10} className='px-0' >
             <h2 className='hed1 text-white text-center'>
               Our Partnership with Certified Diagnostic Centers
             </h2>

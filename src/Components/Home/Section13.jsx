@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Row, Col, Card, CardBody, CardImg, CardTitle, CardText, Button } from 'react-bootstrap';
+import { Row, Col, Card, Button } from 'react-bootstrap';
 import firstImage from '../../../public/Image/mri7.png';
 import SecImage from '../../../public/Image/mri6.png';
 import ThirdImage from '../../../public/Image/mri5.png';
@@ -9,6 +9,7 @@ import SixthImage from '../../../public/Image/mri2.png';
 import SeventhImage from '../../../public/Image/mri1.png';
 import EightImage from '../../../public/Image/mri9.png';
 import NineImage from '../../../public/Image/mri9.png';
+// Import other images...
 
 import { useNavigate } from 'react-router';
 
@@ -57,29 +58,24 @@ export default function Section13() {
 
     return (
         <>
-            <Row className='flex justify-content-center align-items-center py-5 ' style={{backgroundColor:"#DEF0FF"}}  >
+            <Row className='d-flex justify-content-center align-items-center py-lg-5 py-xl-5 py-md-5 py-4 ' style={{backgroundColor:"#DEF0FF"}}  >
                 <div className='text-center'>
-                    <h1 className='hed1 pb-5'>Keep Updated on Diagnostic and  <br /> Pathology Lab Offers in Gurgaon</h1>
+                    <h1 className='hed1 pb-xl-5 pb-lg-5 pb-md-5 pb-3'>Keep Updated on Diagnostic  <br/> and Pathology Lab Offers in  <br/>Gurgaon</h1>
                 </div>
-                <div className={`AllbuttonForMove port-text ${currentPage === 1 ? '' : 'slide'}`}>
-                    {visibleRecords.map((item, id) => (
-                        <Col key={id} md={3} className='justify-content-center align-items-center'>
-                            <div className='Card-Healthscan'>
-                                <div className='Port-imgPort'>
-                                    <img src={item.image} variant='top'  className='img-fluid' />
-                                </div>
-                                  <h4 className='hed3 text-center fw-bold pt-4' style={{color:"#46A4D9"}}>{item.title}</h4>
-                                        <h6 className='para text-center '>{item.subTitle}</h6>
-                                  
-                           
+                {visibleRecords.map((item, id) => (
+                    <Col key={id} md={3} lg={3} xs={6} className={`d-flex flex-column justify-content-center align-items-center mb-3 ${id >= 2 ? 'd-none d-md-block' : ''}`}>
+                        <div className='Card-Healthscan'> 
+                            <div className='Port-imgPort'>
+                                <img src={item.image} variant='top'  className='img-fluid' />
                             </div>
-                        </Col>
-                    ))}
-                </div>
+                            <h4 className='hed3 text-center fw-bold pt-lg-4 pt-md-4 pt-xl-4 pt-2' style={{color:"#46A4D9"}}>{item.title}</h4>
+                            <h6 className='para text-center '>{item.subTitle}</h6>
+                        </div>
+                    </Col>
+                ))}
                 <div className='AllbuttonForMove'>
                     <Button onClick={() => movePage('prev')} disabled={currentPage === 1}>{'<'}</Button>
                     <Button onClick={() => movePage('next')} disabled={currentPage === numberOfPages}>{'>'}</Button>
-                  
                 </div>
             </Row>
         </>
