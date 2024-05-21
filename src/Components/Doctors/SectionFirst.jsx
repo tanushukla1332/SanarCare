@@ -12,7 +12,7 @@ export default function SectionFirst(){
         name: 'Dr. Suneeta Yadav',
         specialization: 'Cardiac Surgeon',
         location: 'Gurugram, India',
-        experience: 'Year of Experience: 30+',
+        experience: 'Year of Experience: ',
         designation: 'Director at',
         hospital: 'Max Hospital Gurugram',
         imageUrl: Doctorsimg1,
@@ -22,7 +22,7 @@ export default function SectionFirst(){
         name: 'Dr. Garima Singh',
         specialization: 'Cardiac Surgeon',
         location: 'Gurugram, India',
-        experience: 'Year of Experience: 30+',
+        experience: 'Year of Experience: ',
         designation: 'Director at',
         hospital: 'Max Hospital Gurugram',
         imageUrl: Doctorsimg1,
@@ -32,7 +32,7 @@ export default function SectionFirst(){
         name: 'Dr. Riddhi Kumari',
         specialization: 'Cardiac Surgeon',
         location: 'Gurugram, India',
-        experience: 'Year of Experience: 30+',
+        experience: 'Year of Experience: ',
         designation: 'Director at',
         hospital: 'Max Hospital Gurugram',
         imageUrl: Doctorsimg1,
@@ -42,7 +42,7 @@ export default function SectionFirst(){
         name: 'Dr. Nidhi Kumari',
         specialization: 'Neurologist',
         location: 'New Delhi, India',
-        experience: 'Year of Experience: 20+',
+        experience: 'Year of Experience:',
         designation: 'Senior Consultant at',
         hospital: 'Apollo Hospital',
         imageUrl: Doctorsimg1, // Add the appropriate image URL for the fourth doctor
@@ -52,10 +52,9 @@ export default function SectionFirst(){
 
     return(
         <>
-        <Row className='py-5 d-flex justify-content-center align-items-center'>
-            <Col md={12}  className="px-0 py-3 d-flex justify-content-evenly" >
+        <Row className='py-xl-5  py-lg-5 py-md-5 py-0 d-md-flex justify-content-center align-items-center section-first'>
+            <Col md={12}  className="px-0 py-lg-3  py-md-3 py-xl-3 py-0 d-md-flex justify-content-evenly" >
                 <div className='col-md-3' style={{boxShadow:"0px 15px 40px 0px #9aaacf40"}}>
-
                 <Form className="d-flex flex-column p-3">
                 <h4 className='hed3 px-2' style={{color:"#585454"}}>By Doctors</h4>
                             <div className="position-relative">
@@ -107,7 +106,7 @@ export default function SectionFirst(){
                                 </ul>
                             </div>
                             </div>
-                <div className='col-md-6 d-flex flex-column gap-5'>
+                <div className='col-md-7 d-flex flex-column gap-xl-5 gap-lg-5 gap-md-5 gap-0'>
                 <DoctorCard doctor={doctorCardData1} />
                 <DoctorCard doctor={doctorCardData2} />
                 <DoctorCard doctor={doctorCardData3} />

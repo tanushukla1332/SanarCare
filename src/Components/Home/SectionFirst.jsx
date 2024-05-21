@@ -15,7 +15,7 @@ import pft from '../../../public/Image/pf.png';
 export default function SectionFirst() {
     return (
         <Row className="d-flex justify-content-center align-items-center py-lg-5 py-3"
-         style={{backgroundColor:"rgba(136, 136, 136, 0.065)" ,zIndex:"1"}}>
+         style={{backgroundColor:"#ffff" ,zIndex:"1"}}>
             <h1 className="hed1 text-center pb-lg-5">Our Radiology Services</h1>
             <Col md={12}>
                 <Marquee className='d-flex gap-1 gap-lg-4 gap-xl-3'>

@@ -11,22 +11,24 @@ const DoctorCard = ({ doctor }) => {
       <Card.Body>
         <Card.Title><h3 className='hed3 text-white'>{doctor.name}</h3></Card.Title>
         <Card.Text>
-        <p className='hed4 text-white fw-normal'>{doctor.specialization},{doctor.location}</p>
-        <p className='hed4 '>{doctor.experience}</p>
-        <p  className='hed4 text-white fw-normal'><span  className='hed4 fw-bold' >Designation</span>:{doctor.designation}</p>
-        <p className='hed4'>{doctor.hospital}</p>
+        <p className='hed4  fw-normal' >{doctor.specialization},{doctor.location}
+        </p>
+        <p className='hed4 fw-bold'  style={{marginTop:"-15px"}}>{doctor.experience}  <span className='para'>30+</span>
+        </p>
+        <p  className='hed4 fw-normal' style={{marginTop:"-15px"}}><span  className='hed4 fw-bold mt-0 pt-0' >Designation</span>:{doctor.designation}</p>
+        <p className='hed4  text-white fw-bold' style={{marginTop:"-15px"}}>{doctor.hospital}</p>
         </Card.Text>
       </Card.Body>
       <div className='button-container'>
-        <Button variant="primary" className='my-3'>Enquiry Now</Button>
+        <Button variant="primary" className='my-lg-3 my-xl-3 my-md-3 my-1'>Enquiry Now</Button>
         <Button variant="primary">Whatsapp <span><FaWhatsapp/></span></Button>
         </div>
     </Card>
     <Accordion defaultActiveKey="0"  className="doctors-cardiind">
       <Accordion.Item eventKey="0">
-        <Accordion.Header> <h1 className='text-lg hed3'  style={{color:"#46A4D9"}}>Doctor Profile</h1>
+        <Accordion.Header><h1 className='text-lg hed3'  style={{color:"#46A4D9"}}>Doctor Profile</h1>
         </Accordion.Header>
-        <Accordion.Body>
+        <Accordion.Body className='para'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -38,7 +40,7 @@ const DoctorCard = ({ doctor }) => {
       </Accordion.Item>
       <Accordion.Item eventKey="1">
         <Accordion.Header> <h1 className='text-lg hed3'  style={{color:"#46A4D9"}}>specialization</h1> </Accordion.Header>
-        <Accordion.Body>
+        <Accordion.Body className='para'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut

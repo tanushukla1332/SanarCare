@@ -38,9 +38,9 @@
     border-radius: 50% !important;
 }
 .scan-div1st{
-    box-shadow: 0 15px 40px 10px rgba(154, 170, 207, 25%) !important;
-    width: 329px !important;
-    height: 270px !important;
+    box-shadow: 0 15px 40px 10px rgba(154, 170, 207, 25%) ;
+    width: 329px ;
+    height: 270px ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,6 +83,18 @@
     background-color: #46A4D9 !important;
     color: white !important;
 
+}
+@media screen  and (max-width: 768px){
+    .scan-div1st img{
+        width: 60px !important;
+        height: 60px !important;
+
+    }
+    .scan-div1st{
+        width:200px;
+        height: 150px;
+    }
+    
 }
 
 

@@ -10,9 +10,6 @@
     transform: translateY(-70%); /* Center vertically */
     border-radius: 8px !important;
 }
-.form-control-search-bar{
-    border: 1px solid gray!important;
-}
 .img-form {
     position: absolute !important;
     left: 30px !important; /* Adjust from left to right */
@@ -48,4 +45,81 @@
     color: #FF851B !important;
     border: 1px solid #FF851B !important;
     background-color: transparent !important;
+}
+
+@media screen and (max-width: 768px) {
+    .main-form-page {
+        width: 330px !important;
+        height: 584px !important;
+        background-color: white;
+        box-shadow: 0 8px 5px 0px rgb(0, 0, 0, 25%) !important;
+        display: flex !important;
+        flex-direction: column !important;
+        top: 15px;
+        position: relative !important;
+        left: 10px !important; /* Adjust this value to shift it further right */
+        transform: translateY(-0%); /* Center vertically */
+        border-radius: 8px !important;
+    }
+    .img-form {
+        position: absolute !important;
+        left: 20px !important; /* Adjust from left to right */
+    }   
+}
+/* iPhone 6/7/8 Plus */
+@media screen and (max-width: 414px) and (min-height: 915px) {
+    .main-form-page {
+        .main-form-page {
+            width: 330px !important;
+            height: 584px !important;
+            background-color: white;
+            box-shadow: 0 8px 5px 0px rgb(0, 0, 0, 25%) !important;
+            display: flex !important;
+            flex-direction: column !important;
+            top: 15px;
+            position: relative !important;
+            left: 60px !important; /* Adjust this value to shift it further right */
+            transform: translateY(-0%); /* Center vertically */
+            border-radius: 8px !important;
+        }
+    }
+}
+
+/* iPads */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .main-form-page {
+        .main-form-page {
+            width: 330px !important;
+            height: 584px !important;
+            background-color: white;
+            box-shadow: 0 8px 5px 0px rgb(0, 0, 0, 25%) !important;
+            display: flex !important;
+            flex-direction: column !important;
+            top: 15px;
+            position: relative !important;
+            left: 50px !important; /* Adjust this value to shift it further right */
+            transform: translateY(-0%); /* Center vertically */
+            border-radius: 8px !important;
+        }
+        /* Your styles for iPads here */
+    }
+}
+
+/* Samsung Galaxy devices */
+@media screen and (max-width: 360px) {
+    .main-form-page {
+        .main-form-page {
+            width: 330px !important;
+            height: 584px !important;
+            background-color: white;
+            box-shadow: 0 8px 5px 0px rgb(0, 0, 0, 25%) !important;
+            display: flex !important;
+            flex-direction: column !important;
+            top: 15px;
+            position: relative !important;
+            left: 50px !important; /* Adjust this value to shift it further right */
+            transform: translateY(-0%); /* Center vertically */
+            border-radius: 8px !important;
+        }
+    }
 }

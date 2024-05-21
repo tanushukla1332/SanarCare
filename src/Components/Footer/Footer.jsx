@@ -11,7 +11,7 @@ import './Footer.css'
 export default function Footer() {
     return (
         <>
-            <Row style={{ boxShadow: "0px 15px 20px 10px #00000040", backgroundColor: "#fff" }} className="d-flex justify-content-center py-3 gap-5">
+            <Row style={{ boxShadow: "0px 15px 20px 10px #00000060", backgroundColor: "#ffff" }} className="d-flex justify-content-center py-3 gap-5">
                 <Col md={4}>
                     <div className="pt-2">
                         <img src={logo} alt="" className="img-fluid" style={{ height: "50px", width: "200px" }} />

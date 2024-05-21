@@ -86,7 +86,7 @@ export default function Ses() {
           )}
 
           <div className='card-header  mb-3' onClick={() => toggleAccordion(5)} style={{ backgroundColor: "#FFD0BB" }}>
-            <h1 className='text-center hed3' style={{ color: "#585454" }}>Are the facilities at Sanar Care equipped with advanced technology?
+            <h1 className='text-center hed3' style={{ color: "#585454" }}>Are the facilities at Sanar Care equipped  <br className='d-block d-md-none '/> with advanced technology?
             </h1>
             <span className='icon'>{expandedIndex === 5 ? <FaMinus className='p-1  rounded-5 ' size={25} style={{ border: "1px solid black ", color: "#585454" }} /> : <FaPlus className='p-1 rounded-5' size={25} style={{ border: "1px solid black ", color: "#585454" }} />}</span>
           </div>

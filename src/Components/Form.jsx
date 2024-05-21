@@ -8,7 +8,7 @@ export default function FormLayout({ heading, formData, para, icons,selectField 
     // Assuming the select field is at index 0
   
   return (
-        <Form className='main-form-page'>
+        <Form  xs={10} className='main-form-page'>
             <h1 className='hed1 text-center pt-5'>{heading}</h1>
             {formData.map((field, index) => (
                 <FormGroup key={index} className='d-flex justify-content-center align-items-center py-4'>

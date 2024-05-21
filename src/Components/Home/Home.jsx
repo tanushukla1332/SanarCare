@@ -23,7 +23,7 @@ export default function Home() {
     return (
         <>
       <Row
-    style={{
+     style={{
         backgroundImage: `url(${banner})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover", // Use 'cover' for responsive background image

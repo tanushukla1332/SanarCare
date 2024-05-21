@@ -50,7 +50,6 @@ color: #FF631A;
   position: relative;
   top: -50px;
 }
-
 .card-image-conatiner{
   width: 200px !important;
   height: 200px !important;
@@ -60,7 +59,6 @@ color: #FF631A;
   position: relative !important;
   left: -70px;
 }
-
 .button-container button:nth-child(1) {
 
   background-color: #FF851B !important;
@@ -70,9 +68,7 @@ color: #FF631A;
   font-weight: 700;
   font-size: 20px !important;
   cursor: pointer;
-
 }
-
 .button-container button:nth-child(2) {
   background-color: #29A71A !important;
   border: 0px !important;
@@ -91,6 +87,67 @@ color: #FF631A;
   background-color: #ffff !important;
   border: 1px solid #29A71A  !important;
   color:  #29A71A ;
+}
+@media screen  and (max-width: 768px){
+  .doctos-banner-text{
+    position: absolute !important;
+    top: -110px !important;
+}
+.doctos-banner-text>h1{
+  font-size: 25px;
+  text-align: center;
+  font-weight: 800;
+  color: #FF631A;
+  }
+  .doctos-banner-text{
+      position: relative !important;
+  }
+  .doctos-banner-text>p{
+      font-size: 15px;
+      text-align: center;
+      color: #353434;
+      font-weight: 600;
+     
+  }
+  .doctos-banner-text>h2{
+      font-size: 25px;
+      text-align: center;
+      color: #156ea1;
+      font-weight: 800;
+  }
+  .section-first{
+    margin-top: -100px;
+    
+  }
+  .button-container button:nth-child(1) {
+    background-color: #FF851B !important;
+    border: 0px !important;
+    box-shadow: 0px !important;
+    border-radius: 10px !important;
+    font-weight: 300;
+    font-size: 10px !important;
+    cursor: pointer;
+  }
+  .button-container button:nth-child(2) {
+    background-color: #29A71A !important;
+    border: 0px !important;
+    font-size: 10px !important;
+    font-weight: 300;
+    box-shadow: 0px !important;
+    border-radius: 10px !important;
+    cursor: pointer;
+  }
+  .card-image-conatiner{
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50% !important;
+    border: 8px solid white !important;
+    box-shadow: 0px 15px 44px rgba(154, 170, 207, 25%) !important;
+    position: relative !important;
+    left: 0px;
+    top: -30px ;
+  }
+  
 }
 
 
