@@ -16,38 +16,38 @@ export default function Section11() {
     {
       id: 0,
       image: sec11img,
-      name: 'Nikhil Dang',
-      quote: 'Thank you so much SANAR CARE: Diagnostic and Pathology Lab in Gurgaon. I do really appreciate your services and timing. Thank you!',
+      name: 'Laxman Dang',
+      quote: 'I recommend you to select Sanar Care while booking any test. It gives you a very huge discount and you may save your money.',
     },
     {
       id: 1,
       image: sec2img,
-      name: 'Navdeep Kaur',
-      quote: 'Thank you so much SANAR CARE: Diagnostic and Pathology Lab in Gurgaon. I do really appreciate your services and timing. Thank you!',
+      name: 'Naman Wasan',
+      quote: "I'm really impressed with how this amazing platform makes availing any medical service required a convenient and a hassle free process. I would strongly recommend for any Diagnostic lab in gurgaon!",
     },
     {
       id: 2,
-      image: sec3img,
-      name: 'Laxmi Kalra',
-      quote: 'Thank you so much SANAR CARE: Diagnostic and Pathology Lab in Gurgaon. I do really appreciate your services and timing. Thank you!',
+      image: sec11img,
+      name: 'Vinay Kalra',
+      quote: 'Great service SANAR CARE-  Diagnostic and Pathology Lab in Gurgaon',
     },
     {
       id: 3,
       image: sec11img,
       name: 'Nikhil Dang',
-      quote: 'Thank you so much SANAR CARE: Diagnostic and Pathology Lab in Gurgaon. I do really appreciate your services and timing. Thank you!',
+      quote: 'Thank you so much SANAR CARE-  Diagnostic and Pathology Lab in  Gurgaon, I do really appreciate your services and timing.Thank you!',
     },
     {
       id: 4,
       image: sec2img,
       name: 'Navdeep Kaur',
-      quote: 'Thank you so much SANAR CARE: Diagnostic and Pathology Lab in Gurgaon. I do really appreciate your services and timing. Thank you!',
+      quote: "Its really amazing platform of providing the facilities in such a fantabulous manner. I'm so happy with the service, I would love to recommend this to each and everyone.",
     },
     {
       id: 5,
       image: sec3img,
       name: 'Laxmi Kalra',
-      quote: 'Thank you so much SANAR CARE: Diagnostic and Pathology Lab in Gurgaon. I do really appreciate your services and timing. Thank you!',
+      quote: 'Such a nice experience.Higly recommended for all the blood tests, CT Scan and MRI in gurgaon.',
     },
   ];
     const slidesPerView = window.innerWidth < 768 ? 1 : 3;

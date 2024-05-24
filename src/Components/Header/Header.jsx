@@ -54,7 +54,7 @@ export default function Header() {
                 <br />
                 <br />
             </Navbar>
-            <Navbar expand="lg" style={{ backgroundColor: "#46A4D9",}}  className='header'>
+          <Navbar expand="lg" style={{ backgroundColor: "#46A4D9", position: "sticky", top: 0, zIndex: 1000 }} className='header'>
                 <Container fluid  className='m-0 p-0'>
                     <Navbar.Brand as={Link} to="/" className="d-lg-none">
                         <img src={logo} alt="" style={{ height: "50px" }} />
