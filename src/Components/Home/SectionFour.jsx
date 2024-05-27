@@ -9,10 +9,10 @@ export default function SectionFour(){
     return(
            
         <Row   className="d-flex justify-content-center  gap-5 py-xl-5 py-md-5 py-lg-5 py-1">
-        <Col md={5} className= "py-xl-5 py-lg-5 py-md-5 py-1" >
+        <Col md={5} xs={5} lg={5}  className= "py-xl-5 py-lg-5 py-md-5 py-1" >
         <img src={ThirdsecImg} alt="" className="img-fluid" />  
         </Col>
-        <Col md={5} className= "py-xl-5 py-md-5 py-lg-5 py-1">
+        <Col md={5}  xs={5} lg={5} className= "py-xl-5 py-md-5 py-lg-5 py-1">
         <h1 className="hed1">Stay Ahead with 
         Preventive Health 
         Check-Up</h1>

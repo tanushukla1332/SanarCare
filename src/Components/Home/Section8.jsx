@@ -19,21 +19,16 @@ export default function Section8() {
       backgroundImage: `linear-gradient(#00000059, #00000059), url(${bgimg8})`,
       backgroundSize: 'cover'
     }}>
-      <Col md={12} xs={12}>
+      <Col md={10}  xs={6} lg={12} xl={12}>
       <h1 className=' text-white hed1 text-center'>Meet Our Expert Team of Doctors</h1>
       <p className='para  text-white text-center pb-lg-4 pb-xl-4 pb-md-4 pb-2'>Our Team of Diverse Specialists</p>
-        <Swiper
-          modules={[Autoplay]}
-          spaceBetween={10}
+      <Swiper
+          spaceBetween={50}
           slidesPerView={slidesPerView}
           loop={true}
-          autoplay={{
-            delay: 1000,
-            disableOnInteraction: false
-          }}
-        
+          autoplay={{ delay: 1000, disableOnInteraction: false }}
+          modules={[ Autoplay]}
         >
-         
           <SwiperSlide>
             <div className='d-flex justify-content-center align-items-center'>
               <div className="doctor-card"  >

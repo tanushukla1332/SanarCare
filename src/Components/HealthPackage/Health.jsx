@@ -7,17 +7,26 @@ import Section13 from "../Home/Section13";
 export default function Health() {
     return (
         <>
-            <Row style={{ backgroundImage: `url(${healthbnr})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-                className="d-flex justify-content-center align-items-center">
+        <Row style={{ backgroundImage: `url(${healthbnr})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
+                className="d-md-flex d-none justify-content-center align-items-center">
                 <Col className="d-flex  align-items-center  ">
-                    <div className="px-5">
+                    <div className="p-5" >
                         <h2 className="hed2">Explore Our Range of</h2>
                         <h2><span className="hed1" style={{ color: "#FF851B" }}> Health Packages</span><span className="hed2"> Today! </span></h2>
-                        <h2 className="hed2"> <span className="hed2"> From comprehensive</span>  </h2>
-                        <h2 >      <span className="hed2">specialized </span></h2>
+                        <h2 className="hed2"> <span className="hed2"> From comprehensive</span>   <span className="hed2">specialized </span> </h2>
+                       
                         <h2 className="hed2"> screenings, we tailor  </h2>
-                        <h2 className="hed2"> packages to <span className="hed1" style={{ color: "#FF851B" }}>suit your</span>  <br />
-                            needs</h2>
+                        <h2 className="hed2"> packages to <span className="hed1" style={{ color: "#FF851B" }}>suit your</span> 
+                              <span className="hed2"> needs</span></h2>
+                    </div>
+                </Col>
+            </Row>
+            <Row style={{ backgroundImage: `url(${healthbnr})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
+                className="d-flex d-md-none justify-content-center align-items-center">
+                <Col className=" col-xs-9 d-flex  align-items-center">
+                    <div className="p-5">
+                        <h1  className="hed1" style={{ color: "#FF851B" }}>Explore Our Range of  <span className="hed1">Health Packages </span></h1>
+                        
                     </div>
                 </Col>
             </Row>

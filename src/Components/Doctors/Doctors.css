@@ -12,7 +12,6 @@ color: #FF631A;
     text-align: center;
     color: #353434;
     font-weight: 600;
-   
 }
 .doctos-banner-text>h2{
     font-size: 65px;
@@ -57,7 +56,7 @@ color: #FF631A;
   border: 8px solid white !important;
   box-shadow: 0px 15px 44px rgba(154, 170, 207, 25%) !important;
   position: relative !important;
-  left: -70px;
+  left: -85px;
 }
 .button-container button:nth-child(1) {
 
@@ -146,6 +145,12 @@ color: #FF631A;
     position: relative !important;
     left: 0px;
     top: -30px ;
+  }
+  .doctors-card {
+    background: linear-gradient(to right, #46A4D9, #C1E4F9) !important;
+    border: 0px !important;
+    border-radius: 0px !important;
+    height:200px;
   }
   
 }

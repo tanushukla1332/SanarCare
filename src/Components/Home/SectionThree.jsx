@@ -1,7 +1,9 @@
-
-import {Row,Col,Carousel,Card,Button} from  'react-bootstrap';
+import { Row, Col, Card, Button } from 'react-bootstrap';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
 import ultrasoundImg from '../../../public/Image/ultraSoun.jpg';
-import xrayImg from '../../../public/Image/x-ray.png';
+import xrayImg from '../../../public/Image/doctor-patient-watching-x-ray.jpg';
 import ctScanImg from '../../../public/Image/FileCtScan.jpg';
 import radi1 from '../.././../public/Image/radi1 (1).png';
 import radi2 from '../../../public/Image/radi1 (2).png';
@@ -9,135 +11,114 @@ import radi3 from '../../../public/Image/radi1 (3).png';
 import radi4 from '../../../public/Image/radi1 (4).png';
 import radi5 from '../../../public/Image/radi1 (5).png';
 
-export default function SectionThree(){
-    return(
-        <Row className=" d-md-flex justify-content-center align-itmes-center  py-lg-5 py-xl-5 py-md-5 py-4">
-        <Col md={10}>
-          <h1 className=" hed1 text-center pb-xl-5 pb-lg-5 pb-md-5 pb-0 hover">Your Scans In Gurugram</h1>
-          <Row className="py-3 d-flex justify-content-center align-itmes-center ">
-          <Carousel className="scansIndicators" indicators={false}>
-          <Carousel.Item>
-          <div className="d-flex justify-content-center align-items-center gap-0">
-            <Col md={4} className='d-md-flex d-none'>
-              <Card className="scan-card-main">
-                <Card.Img src={xrayImg} alt="Ultrasound"  className='scan-image'/>
-                <Card.ImgOverlay>
-                  <div className="scan-details">
-                    <Card.Title>X-Ray</Card.Title>
-                    <div className="icon-container">
-                    <img src={radi1} alt="Icon" className="icon" />
-                     </div>
-                    <Card.Text className="text-center">Prohealth Imaging Gurgaon</Card.Text>
-                    <Card.Text className="price text-center">Start ₹496</Card.Text>
-                    <div className="text-center my-4  d-flex justify-content-center align-items-center">
-                    <Button className="buttonfirst scan-button-sm">Book Appointment</Button>
-                  </div>
-                  </div>
-                </Card.ImgOverlay>
-              </Card>
-            </Col>
-            <Col md={4}>
-            <Card className="scan-card-main">
-              <Card.Img src={ultrasoundImg} alt="Ultrasound"  className="scan-image"/>
-              <Card.ImgOverlay>
-                <div className="scan-details">
-                  <Card.Title>Ultra Sound</Card.Title>
-                  <div className="icon-container">
-                  <img src={radi3} alt="Icon" className="icon" />
-                   </div>
-                  <Card.Text className="text-center">Prohealth Imaging Gurgaon</Card.Text>
-                  <Card.Text className="price text-center">Start ₹496</Card.Text>
-                  <div className="text-center my-4  d-flex justify-content-center align-items-center ">
-                  <Button className="buttonfirst scan-button-sm">Book Appointment</Button>
-                </div>
-                </div>
-              </Card.ImgOverlay>
-            </Card>
-          </Col>
-            <Col md={4} >
-              <Card className="scan-card-main">
-                <Card.Img src={ctScanImg} alt="X-Ray"  className="scan-image" />
-                <Card.ImgOverlay>
-                  <div className="scan-details">
-                    <Card.Title>CT Scan</Card.Title>
-                    <div className="icon-container">
-                    <img src={radi2} alt="Icon" className="icon" />
-                     </div>
-                    <Card.Text className="text-center">Prohealth Imaging Gurgaon</Card.Text>
-                    <Card.Text className="price text-center">Start ₹600</Card.Text>
-                    <div className="text-center my-4  d-flex justify-content-center align-items-center ">
-                      <Button className="buttonfirst scan-button-sm">Book Appointment</Button>
-                    </div>
-                  </div>
-                </Card.ImgOverlay>
-              </Card>
-            </Col>
-            </div>
-            </Carousel.Item>
-            <Carousel.Item >
-            <div  className="d-flex justify-content-center align-items-center gap-lg-3  gap-xl-3 gap-1">
-            <Col md={4}>
-              <Card className="scan-card-main ">
-                <Card.Img src={xrayImg} alt="Ultrasound" />
-                <Card.ImgOverlay>
-                  <div className="scan-details"> 
-                    <Card.Title>PT SCAN</Card.Title>
-                    <div className="icon-container">
-                    <img src={radi3} alt="Icon" className="icon" />
-                     </div>
-                    <Card.Text className="text-center">Prohealth Imaging Gurgaon</Card.Text>
-                    <Card.Text className="price text-center">Start ₹496</Card.Text>
-                    <div className="text-center my-4  d-flex justify-content-center align-items-center ">
-                      <Button  className="buttonfirst scan-button-sm">Book Appointment</Button>
-                    </div>
-                  </div>
-                </Card.ImgOverlay>
-              </Card>
-            </Col>
-            <Col md={4} className='d-md-flex d-none'>
-              <Card className="scan-card-main">
-                <Card.Img src={ultrasoundImg} alt="CT Scan"  className="scan-image" />
-                <Card.ImgOverlay>
-                  <div className="scan-details">
-                    <Card.Title>MRI Test</Card.Title>
-                    <div className="icon-container">
-                    <img src={radi4} alt="Icon" className="icon" />
-                     </div>
-                    <Card.Text className="text-center">Prohealth Imaging Gurgaon</Card.Text>
-                    <Card.Text className="price text-center">Start ₹700</Card.Text>
-                    <div className="text-center my-4  d-flex justify-content-center align-items-center ">
-                      <Button className="buttonfirst scan-button-sm">Book Appointment</Button>
-                    </div>
-                  </div>
-                </Card.ImgOverlay>
-              </Card>
-            </Col>
-            <Col md={4}>
-              <Card className="scan-card-main">
-                <Card.Img src={ctScanImg} alt="X-Ray"   className="scan-image"/>
-                <Card.ImgOverlay>
-                  <div className="scan-details">
-                    <Card.Title>ECG Test</Card.Title>
-                    <div className="icon-container">
-                    <img src={radi5} alt="Icon" className="icon"  />
-                     </div>
-                    <Card.Text className="text-center">Prohealth Imaging Gurgaon</Card.Text>
-                    <Card.Text className="price text-center">Start ₹600</Card.Text>
-                    <div className="text-center my-4  d-flex justify-content-center align-items-center ">
-                      <Button className="buttonfirst scan-button-sm">Book Appointment</Button>
-                    </div>
-                  </div>
-                </Card.ImgOverlay>
-              </Card>
-            </Col>
-            </div>
-            </Carousel.Item>
-            </Carousel>
-          </Row>
-          <div className="text-center mt-4 d-flex justify-content-center align-items-center ">
-            <Button className="buttonfirst">VIEW MORE SCANS</Button>
-          </div>
-        </Col>
-      </Row>
-    )
+export default function SectionThree() {
+  const slidesData = [
+    {
+      img: xrayImg,
+      title: "X-Ray",
+      icon: radi1,
+      center: "Prohealth Imaging Gurgaon",
+      price: "₹496",
+      buttonText: "Book Appointment",
+    },
+    {
+      img: ultrasoundImg,
+      title: "Ultra Sound",
+      icon: radi3,
+      center: "Prohealth Imaging Gurgaon",
+      price: " ₹496",
+      buttonText: "Book Appointment",
+    },
+    {
+      img: ctScanImg,
+      title: "CT Scan",
+      icon: radi2,
+      center: "Prohealth Imaging Gurgaon",
+      price: " ₹600",
+      buttonText: "Book Appointment",
+    },
+    {
+      img: xrayImg,
+      title: "PT SCAN",
+      icon: radi3,
+      center: "Prohealth Imaging Gurgaon",
+      price: "₹496",
+      buttonText: "Book Appointment",
+    },
+    {
+      img: ultrasoundImg,
+      title: "MRI Test",
+      icon: radi4,
+      center: "Prohealth Imaging Gurgaon",
+      price: " ₹700",
+      buttonText: "Book Appointment",
+    },
+    {
+      img: ctScanImg,
+      title: "ECG Test",
+      icon: radi5,
+      center: "Prohealth Imaging Gurgaon",
+      price: "₹600",
+      buttonText: "Book Appointment",
+    },
+  ];
+  const slidesPerView = window.innerWidth < 768 ? 2 : 4;
+  return (
+    <Row className="d-md-flex justify-content-center align-items-center py-lg-5 py-xl-5 py-md-5 py-4">
+      <Col md={10} xs={12}>
+        <h1 className="hed1 text-center pb-xl-5 pb-lg-5 pb-md-5 pb-0 hover">Book Scans From SanarCare & Test Services</h1>
+        <Row className="py-3 d-flex justify-content-center align-items-center">
+          <Swiper
+            spaceBetween={10}
+            slidesPerView={slidesPerView}
+            loop={true}
+            modules={[Autoplay]}
+            autoplay={{ 
+              delay: 3000,
+              disableOnInteraction: false
+             }}
+           
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 1,
+              },
+              1024: {
+                slidesPerView: 4,
+              },
+            }}
+          >
+             {slidesData.map((slide, index) => (
+              <SwiperSlide key={index}>
+                <Col md={12} xs={12} className="d-flex justify-content-center ">
+                  <Card  className='scan-card-main'>
+                    <img src={slide.img} alt={slide.title}  className='img-fluid scan-image' />
+                    <Card.Body>
+                      <Card.Title className="text-center hed3">{slide.title}</Card.Title>
+                      <Card.Text className="text-center hed4">{slide.center}</Card.Text>
+                      <Card.Text className="price text-center para">start <span style={{textDecoration:"line-through",color:'#3b7fbf',fontSize:"16px"}}>900</span>
+                      <span >{slide.price}</span></Card.Text>
+                      
+                    </Card.Body>
+                    <div className="text-center my-4 d-flex justify-content-center align-items-center">
+                        <Button className="buttonfirst scan-button-sm">{slide.buttonText}</Button>
+                      </div>
+                      <div className='border'>
+
+                      </div>
+                  </Card>
+                </Col>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </Row>
+       
+      </Col>
+           
+         
+        
+    </Row>
+  );
 }

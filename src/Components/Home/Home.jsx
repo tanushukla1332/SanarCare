@@ -55,11 +55,14 @@ export default function Home() {
         
             <Banner />
             <SEctionFirst />
-            <SectionNd />
             <SectionThree />
             <Section12 />
-            <SectionFour />
             <SectionSix />
+            <SectionFour />
+            <SectionNd />
+           
+           
+          
             <SectionFive />
             <Section13 />
 

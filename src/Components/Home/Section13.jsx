@@ -65,9 +65,9 @@ export default function Section13() {
                 {visibleRecords.map((item, id) => (
                     <Col key={id} md={3} lg={3} xs={6} className={`d-flex flex-column justify-content-center align-items-center mb-3 ${id >= 2 ? 'd-none d-md-block' : ''}`}>
                         <div className='Card-Healthscan'> 
-                            <div className='Port-imgPort'>
-                                <img src={item.image} variant='top'  className='img-fluid' />
-                            </div>
+                          
+                                <img src={item.image} variant='top'  className='img-fluid '/>
+                            
                             <h4 className='hed3 text-center fw-bold pt-lg-4 pt-md-4 pt-xl-4 pt-2' style={{color:"#46A4D9"}}>{item.title}</h4>
                             <h6 className='para text-center '>{item.subTitle}</h6>
                         </div>

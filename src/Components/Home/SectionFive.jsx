@@ -13,7 +13,7 @@ export default function SectionFive(){
         <Row  className='d-md-flex flex-sm-row justify-content-center align-items-center gap-4 py-xl-4  py-lg-4 py-md-4 py-4 '
        >
         <Col md={10}>
-        <h1 className='text-center hed1 pb-xl-5 pb-lg-5 pb-md-5 pb-3'>Are you keeping up with your preventive care?</h1>
+        <h1 className='text-center hed1 pb-xl-5 pb-lg-5 pb-md-5 pb-5'>Are you keeping up with your preventive care?</h1>
         <div className='d-flex  flex-sm-row align-items-center gap-xl-4  gap-lg-4 gap-md-4 gap-2  justify-content-center'>
         <div className='fifthsec' style={{backgroundColor:"#FF5F1B4d"}}>
         <img src={fifthsecimg1} alt="" className='img-fluid' />

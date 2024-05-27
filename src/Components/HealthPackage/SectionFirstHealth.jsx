@@ -96,7 +96,7 @@ export default function SectionFirstHealth(){
             <Row className='py-3'>
                 {healthdata.slice(0, displayCount).map((data, index) => (
                     <Col key={index} md={4} className='py-3'>
-                        <div className='health-div'>
+                        <div className='health-div-iind'>
                             <img src={data.img} alt="" className='img-fluid' />
                                 <h4 className='hed4 text-center pt-5 fw-bold' style={{ color: "#46A4D9" }}>{data.titile}</h4>
                                     <p className='para text-center'>{data.packages}</p>

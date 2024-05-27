@@ -90,31 +90,31 @@ export default function Doctors() {
                     height: "480px",
                 }}>
                 <Col md className="d-flex justify-content-center flex-column ">
-                    <div className="col-md-8 d-flex justify-content-center flex-column doctos-banner-text">
+                    <div className="col-md-7 d-flex justify-content-center flex-column doctos-banner-text">
                         <h1>Delivering Wellness</h1>
                         <p>With Our</p>
                         <h2>Team of Experties</h2>
 
 
                     </div>
-                    <div style={{ position: "absolute", top: "85%" }}>
+                    <div style={{ position: "absolute", top: "65%" ,left:'20%'}}>
                         <FormLayout heading="Inquiry Now" formData={formData1} form icons={icons} selectField={selectField1} />
                     </div>
                 </Col>
 
             </Row>
             <div className="d-none d-md-block">
-  {/* Hide on extra small and small screens */}
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-</div>
+                {/* Hide on extra small and small screens */}
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </div>
 
-            <SectionFirst/>
+            <SectionFirst />
 
             <Section11 />
             <Section10 />

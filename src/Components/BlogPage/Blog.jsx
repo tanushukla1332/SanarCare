@@ -24,7 +24,7 @@ export default function Blog() {
                 backgroundImage: `url(${blogBanner})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center", height: "400px"
 
 
-            }} className='d-flex justify-content-center align-items-center'>
+            }} className='d-md-flex d-none justify-content-center align-items-center'>
                 <Col md={12} className='d-flex align-items-center '>
                     <div className='px-5 '>
                         <h2 className='d-flex gap-4 pl-5 '><span className='hed2'>Explore Our</span>  <span className="hed1" style={{ color: "#FF631A" }}>Comprehensive</span></h2>
@@ -36,21 +36,32 @@ export default function Blog() {
                     </div>
                 </Col>
             </Row>
-            <Row className='py-5 d-flex'>
-                <Col md={12} className="px-0 d-flex justify-content-evenly" >
-                    <div className='col-md-6 d-flex flex-column '>
-                        <h1 className="hed1  pb-3" >Blogs</h1>
+            <Row style={{
+                backgroundImage: `url(${blogBanner})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center",}} className='d-flex d-md-none align-items-center'>
+             <Col xs={7} className='p-3'>
+              <h1 className='hed1'>Explore Our <span className="hed1" style={{ color: "#FF631A" }}>Blog Page Article </span>
+               </h1>
+
+              </Col>
+          
+                  
+           
+            </Row>
+            <Row className='py-lg-5 py-md-5 py-xl-5 py-2 d-md-flex'>
+                <Col md={12} className="px-0 d-md-flex justify-content-evenly" >
+                    <div className='col-md-6  col-xs-8 d-flex flex-column'>
+                        <h1 className="hed1  pb-3  ps-lg-0 ps-md-0 ps-xl-0 ps-2" >Blogs</h1>
                         <div>
                             <img src={blog6img} alt="" className='img-fluid' onClick={()=>navigate('/blog/blogdetails')}/>
-                            <h3 className='hed3 pt-4 pb-2' style={{ color: "#46A4D9" }}>Revaccination against coronavirus will help to stay healthy</h3>
-                            <p className='para'>
+                            <h3 className='hed3 pt-lg-4 pt-md-4 pt-xl-4 pt-2 pb-lg-2 pb-xl-2 pb-md-2 pb-0   ps-lg-0 ps-md-0 ps-xl-0 ps-2' style={{ color: "#46A4D9" }}>Revaccination against coronavirus will help to stay healthy</h3>
+                            <p className='para ps-lg-0 ps-md-0 ps-xl-0 ps-2'>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                                 been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like </p>
                         </div>
                         <div className='pt-4'>
                             <img src={blog5img} alt="" className='img-fluid' />
-                            <h3 className='hed3  pt-4 pb-2' style={{ color: "#46A4D9" }}>Prevention of colds with vitamins from natural products</h3>
-                            <p className='para'>
+                            <h3 className='hed3  pt-4 pb-lg-2 pb-xl-2 pb-md-2 pb-0  ps-lg-0 ps-md-0 ps-xl-0 ps-2' style={{ color: "#46A4D9" }}>Prevention of colds with vitamins from natural products</h3>
+                            <p className='para  ps-lg-0 ps-md-0 ps-xl-0 ps-2'>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                                 been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like </p>
                         </div>
