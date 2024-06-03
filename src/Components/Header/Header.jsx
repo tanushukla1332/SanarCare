@@ -109,6 +109,7 @@ export default function Header() {
                             <div className="position-relative">
                                 <Form.Control
                                     type="search"
+                                    
                                     aria-label="Search"
                                     placeholder='search your scans'
                                     className="ms-lg-2"
