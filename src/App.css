@@ -13,14 +13,8 @@
   transition: all 0.3s ease;
 
 }
-.hed1:hover {
-  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.342); /* Text shadow effect */
-}
-.hed1:hover:before {
- /* Adjusted positioning */
-  border-right-color: #585454; /* Adjusted border color */
-  opacity: 1;
-}
+
+
 .hed3{
   font-size: 22px;
   font-weight: 600;
@@ -45,20 +39,20 @@
 
 @media screen and  (max-width:768px) {
   .hed1{
-    font-size:22px;
+    font-size:12px;
     color: #585454;
     font-weight: 600;
   }
   .hed4{
-    font-size:9px;
+    font-size:10px;
     font-weight:600;
   }
   .para{
-    font-size: 10px ;
+    font-size: 6px ;
     font-weight:450 ;
   }
   .hed3{
-    font-size: 12px;
+    font-size: 9px;
     font-weight: 550;
 
   }

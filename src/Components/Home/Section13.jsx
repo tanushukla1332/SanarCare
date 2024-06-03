@@ -60,12 +60,11 @@ export default function Section13() {
         <>
             <Row className='d-flex justify-content-center align-items-center py-lg-5 py-xl-5 py-md-5 py-4 ' style={{backgroundColor:"#DEF0FF"}}  >
                 <div className='text-center'>
-                    <h1 className='hed1 pb-xl-5 pb-lg-5 pb-md-5 pb-3'>Keep Updated on Diagnostic  <br/> and Pathology Lab Offers in  <br/>Gurgaon</h1>
+                    <h1 className='hed1 pb-xl-4 pb-lg-4 pb-md-4 pb-3'>Our Blogs</h1>
                 </div>
                 {visibleRecords.map((item, id) => (
                     <Col key={id} md={3} lg={3} xs={6} className={`d-flex flex-column justify-content-center align-items-center mb-3 ${id >= 2 ? 'd-none d-md-block' : ''}`}>
                         <div className='Card-Healthscan'> 
-                          
                                 <img src={item.image} variant='top'  className='img-fluid '/>
                             
                             <h4 className='hed3 text-center fw-bold pt-lg-4 pt-md-4 pt-xl-4 pt-2' style={{color:"#46A4D9"}}>{item.title}</h4>

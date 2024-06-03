@@ -3,7 +3,7 @@ import {Autoplay} from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Card, Row, Col,}  from 'react-bootstrap';
+import { Card, Row, Col,Button}  from 'react-bootstrap';
 import bgimg8 from '../../../public/Image/Secbg8.png';
 import sec8_1 from '../../../public/Image/sec83.png';
 import sec8_2 from '../../../public/Image/sec82.png';
@@ -13,7 +13,7 @@ import fifthd2ctr from '../../../public/Image/Fifth4-1.webp';
 import fifthd3ctr from '../../../public/Image/Fifth4.webp'
 
 export default function Section8() {
-  const slidesPerView = window.innerWidth < 768 ? 1 : 3;
+  const slidesPerView = window.innerWidth < 768 ? 1 : 4;
   return (
     <Row className="py-lg-5  py-md-5 py-xl-5 py-3 d-flex justify-content-center align-items-center" style={{
       backgroundImage: `linear-gradient(#00000059, #00000059), url(${bgimg8})`,
@@ -31,7 +31,7 @@ export default function Section8() {
         >
           <SwiperSlide>
             <div className='d-flex justify-content-center align-items-center'>
-              <div className="doctor-card"  >
+              <div className="doctor-card">
                 <img className="img-fluid doctor-image" src={sec8_1} alt="Doctor 2" />
                 <Card className='card-doctor-main'>
                   <Card.Title>
@@ -39,7 +39,11 @@ export default function Section8() {
                   </Card.Title>
                   <Card.Text>
                     <p className='para text-black text-center'>Cardiologist</p>
+                   <div className='d-flex justify-content-center align-items-center'>
+                  
+                   </div>
                   </Card.Text>
+                 
                 </Card>
               </div>
             </div>
@@ -54,7 +58,10 @@ export default function Section8() {
                   </Card.Title>
                   <Card.Text>
                     <p className='para text-black'>Cardiologist</p>
+                
                   </Card.Text>
+          
+                  
                 </Card>
               </div>
             </div>
@@ -69,7 +76,9 @@ export default function Section8() {
                   </Card.Title>
                   <Card.Text>
                     <p className='para text-black'>Gynecologists</p>
+                    
                   </Card.Text>
+                 
                 </Card>
               </div>
             </div>
@@ -84,7 +93,9 @@ export default function Section8() {
                 </Card.Title>
                 <Card.Text>
                   <p className='para text-black '>Gynecologists</p>
+
                 </Card.Text>
+               
               </Card>
             </div>
           </div>
@@ -99,6 +110,7 @@ export default function Section8() {
               </Card.Title>
               <Card.Text>
                 <p className='para text-black'>Laparoscopy</p>
+                
               </Card.Text>
             </Card>
           </div>

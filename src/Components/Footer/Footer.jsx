@@ -4,6 +4,7 @@ import youTube from '../../../public/Image/youtube_1384060 1.png';
 import Fb from '../../../public/Image/Fbicon.png';
 import phone from '../../../public/Image/phoneIcon.png';
 import mail from '../../../public/Image/mail.png';
+import instr from './../../../public/Image/instagram (1) 1.png'
 
 
 import './Footer.css'
@@ -11,8 +12,37 @@ import './Footer.css'
 export default function Footer() {
     return (
         <>
-            <Row style={{ boxShadow: "0px 15px 20px 10px #00000060", backgroundColor: "#ffff" }} className="d-flex justify-content-center py-3 gap-5">
-                <Col md={4}>
+         <Row className="d-xl-flex d-none justify-content-center align-items-center"  >
+         <Col md={12} className="fotter-first ">
+    <h1 className="hed3 text-center pt-3">Popular Radiology Scan's</h1>
+    <div className="d-flex justify-content-center align-items-center gap-1">
+        <p className="para text-left with-slash">Coronary CT Angiography In Gurugram</p>
+        <p className="para text-left with-slash">X-Ray Neck Lateral View In Gurugram</p>
+        <p className="para text-left with-slash">Color Doppler - Carotids In Gurugram</p>
+        <p className="para text-left">Ultra Sound - Thyroid In Gurugram</p>
+    </div>
+</Col>
+
+
+            </Row>
+            <Row className=" d-none justify-content-center align-items-center py-1" 
+           >
+         <Col md={12}>
+    <h1 className="hed3 text-center pt-3">Scan's in Gurugram</h1>
+    <div className="d-flex justify-content-center align-items-center gap-1">
+        <p className="para text-left with-slash">Mri Scansc In Gurugram Sector48</p>
+        <p className="para text-left with-slash">CT Scans   In Gurugram Sector 55</p>
+        <p className="para text-left with-slash">Pet Scans  In Gurugram Sector 49</p>
+        <p className="para text-left with-slash">Dexa Scans In Gurugram Sector 7</p>
+        <p className="para text-left">Ecg Test In Gurugram Sector 22</p>
+    </div>
+</Col>
+
+
+            </Row>
+            <Row  className="d-flex justify-content-center py-3 gap-5" style={{borderTop:"1px solid #c1c0c098"}}>
+               <div xs={10} className="d-flex justify-content-center gap-5">
+               <Col md={4} >
                     <div className="pt-2">
                         <img src={logo} alt="" className="img-fluid" style={{ height: "50px", width: "200px" }} />
                     </div>
@@ -26,11 +56,16 @@ export default function Footer() {
                 <Col md={3}>
                     <h3 className="hed3   fw-bold pt-3"  style={{color:"#585454"}} >GET IN TOUCH</h3>
                 </Col>
+               </div>
 
 
 
             </Row>
-            <Row style={{ boxShadow: "0px 15px 20px 10px #00000040", backgroundColor: "#46A4D9" }} className="d-flex justify-content-center py-5 gap-5">
+           
+            <Row style={{ boxShadow: "0px 15px 20px 10px #00000040", backgroundColor: "#46A4D9" }} className="d-flex justify-content-center py-1 gap-5">
+                <div>
+                    
+                </div>
                 <Col md={4} style={{ borderRight: "1px solid white" }}>
                     <div>
                         <p className="para text-white text-left">Sanar Care is a premier provider of radiology
@@ -62,9 +97,10 @@ export default function Footer() {
                     </div>
                     <div>
                         <h4 className="hed4 text-white">FOLLOW US</h4>
-                        <div className="d-flex  gap-3">
+                        <div className="d-flex  gap-3 cursor-pointer">
                             <img src={Fb} alt="" className="img-fluid" />
                             <img src={youTube} alt="" className="img-fluid" />
+                            <img src={instr} alt="" className="img-fluid" />
                         </div>
                     </div>
                 </Col>

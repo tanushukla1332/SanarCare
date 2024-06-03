@@ -76,33 +76,33 @@ export default function Section9() {
 
     return (
         <>
-        <Row className="d-flex justify-content-center align-items-center py-xl-5 py-md-5 py-lg-5  py-3 ">
-        <h1 className='hed1 text-center'>Our  Health Packages</h1>
-        <Col md={10} xs={10}>
-            <Row className='py-xl-5 py-md-5 py-lg-5  py-0  d-flex'>
-                {healthdata.slice(0, displayCount).map((data, index) => (
-                    <Col key={index} md={4} className='py-xl-5 py-md-5 py-lg-5  py-2 '>
-                        <div className='health-div'>
-                            <img src={data.img} alt="" className='img-fluid' />
-                                <h4 className='hed4 text-center pt-lg-5  pt-xl-5 pt-md-5 pt-1 fw-bold' style={{ color: "#46A4D9" }}>{data.titile}</h4>
+            <Row className="d-flex justify-content-center align-items-center pb-5  ">
+                <h1 className='hed1 text-center py-lg-0 py-md-0 py-xl-0 py-3'>Our  Health Packages</h1>
+                <Col md={10} xs={10}>
+                    <Row className='py-xl-4 py-md-4 py-lg-4  py-0  d-flex'>
+                        {healthdata.slice(0, displayCount).map((data, index) => (
+                            <Col key={index} md={4} className=' pb-lg-0 pb-md-0 pb-xl-0 pb-3'>
+                                <div className='health-div'>
+                                    <img src={data.img} alt="" className='img-fluid' />
+                                    <h4 className='hed4 text-center pt-lg-5  pt-xl-5 pt-md-5 pt-1 fw-bold' style={{ color: "#46A4D9" }}>{data.titile}</h4>
                                     <p className='para text-center'>{data.packages}</p>
-                                    <p className='para text-center pt-lg-1 pt-md-1 pt-xl-1 pt-0' 
-                                    style={{color:"#00AC26",fontWeight:"800"}}> 
-                                    <span style={{color:"#585454",textDecoration:"line-through",fontWeight:"500"}}>₹8,655.00</span> {data.price} </p>
+                                    <p className='para text-center pt-lg-1 pt-md-1 pt-xl-1 pt-0'
+                                        style={{ color: "#00AC26", fontWeight: "800" }}>
+                                        <span style={{ color: "#585454", textDecoration: "line-through", fontWeight: "500" }}>₹8,655.00</span> {data.price} </p>
                                     <div className='d-flex justify-content-center align-items-center text-center '>
                                         <Button className='buttonfirst '>Enquire Now</Button>
                                     </div>
+                                </div>
+                            </Col>
+                        ))}
+                    </Row>
+                    {healthdata.length > displayCount && (
+                        <div className="text-center d-flex justify-content-center align-items-center scan-button-sm ">
+                            <Button onClick={handleLoadMore} className='buttonfirst'>Load More</Button>
                         </div>
-                    </Col>
-                ))}
+                    )}
+                </Col>
             </Row>
-            {healthdata.length > displayCount && (
-                <div className="text-center d-flex justify-content-center align-items-center scan-button-sm ">
-                    <Button onClick={handleLoadMore} className='buttonfirst'>Load More</Button>
-                </div>
-            )}
-        </Col>
-    </Row>
 
         </>
     )

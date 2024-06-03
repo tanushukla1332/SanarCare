@@ -6,15 +6,12 @@
     height:  735px!important; /* Set the height to viewport height */
     overflow-y: auto !important;
   }
-
-
 .form-scans form div .form-label{
     color:#46A4D9;
 }
 .form-scans form div  .form-control{
     border: 1px solid gray !important;
     box-shadow: none !important;
-
 }
 .form-check-input{
     border: 1px solid #46A4D9;
@@ -22,43 +19,48 @@
     width: 20px !important;
     height: 20px !important;
 }
-.scan-card{
+.scan-card {
     border: 0px !important;
     box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.096) !important;
     border-right: 12px solid #FF851B !important;
     border-top-right-radius: 10px !important;
     border-bottom-right-radius: 10px !important;
-    padding: 0px 30px ;
-}
-.scan-card-img-div{
-   width: 100px;
-   height: 90px;
-   padding: 20px;
+    padding: 0px 5px;
+    border-bottom-left-radius: 0pX !important;
+    border-top-left-radius: 0px !important;
+  }
+  .scan-card-body>.subtitle{
+    margin-top: -8px;
+  }
+
+  .scan-card-img-div {
     background-color: #E9FAFF !important;
-    border-radius: 50% !important;
-}
+    display: flex;
+    height: 50px;
+    width: 50px;
+  }
+
 .scan-div1st{
-    box-shadow: 0 15px 40px 10px rgba(154, 170, 207, 25%) ;
-    width: 329px ;
-    height: 270px ;
+    box-shadow: 0 4px 8px  rgba(0, 0, 0, 0.1) ;
+    width: 209px ;
+    height: 150px ;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     border-radius: 10px;
+    padding: 8px;
 }
-
+.scan-div1st>img{
+    width: 50px;
+}
 .filed-div{
-    gap:20px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #46A4D9 !important; 
-    margin-left: 100px !important;
-    width: 720px !important;
     height:80px !important;
-    border-radius: 20px!important;
     padding: 5px 10px !important;
 }
 .button-white-bg{
@@ -82,6 +84,11 @@
 .scan-div2:hover{
     background-color: #46A4D9 !important;
     color: white !important;
+
+}
+.sectionContainerHealth{
+     background-color:  #ecededb2  
+
 
 }
 @media screen  and (max-width: 768px){

@@ -39,7 +39,7 @@ export default function Health() {
             <Section13 />
             <Row className="d-flex justify-content-center align-items-center py-5">
                 <Col md={10}>
-                    <h1 className="hed1 text-center">Popular tests in Gurgaon</h1>
+                    <h1 className="hed1 text-center pb-4">Popular tests in Gurgaon</h1>
                     <p className="para">Full Body Health Checkup in Gurgaon / Heart Test in Gurgaon / Kidney Test in Gurgaon / Liver Test in Gurgaon / Thyroid Test in Gurgaon /
                         Gastrointestinal Bone And Joint Prostate Test in Gurgaon / Infectious Disease Gynaecology Test in Gurgaon / Allergy Test in Gurgaon / Diabetes
                         Test in Gurgaon / Gastro Test Female Cancer Pregnancy Test Cancer Test Cardiology Test Nephrology Orthopedics Test Tuberculosis Test in

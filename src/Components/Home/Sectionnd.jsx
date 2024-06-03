@@ -12,12 +12,14 @@ import ndsec11img from '../../../public/Image/2nsecimg11.png';
 import { Row, Col } from 'react-bootstrap'
 
 export default function SectionNd() {
+  
+    
     return (
         <>
 
             <Row className="d-flex justify-content-center align-items-center py-lg-5 py-3"  style={{ backgroundColor: "#DEF0FF" }}>
-                <Col md={10}>
-                    <h1 className="hed1 pb-lg-3 pb-2 text-center">Why sanar Care</h1>
+                <Col md={10} xs={10} sm={10}>
+                    <h1 className="hed1 pb-lg-4 pb-2 text-center">Why sanar Care</h1>
                     <p className="para pb-lg-5 pb-3">Sanar Care all about giving you the best care possible when it comes to radiology. We're not just about scans; we're here to support you every step
                         of the way in your health journey. From the moment you walk in, we'll make sure you feel taken care of and provide you with the most advanced
                         services available. Your health is our priority, and we're committed to making sure you get the superior care you deserve.</p>

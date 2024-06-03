@@ -1,13 +1,56 @@
 
-
-.dropdown-toggle::after {
-  color: white !important;
+.sectionContainer {
+ background-image: linear-gradient(to right, #FFD0BB, transparent);
+ background-size: 800px;
+ background-repeat: no-repeat;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.drop-down{
-  text-decoration: none !important;
-  color: #5E5E5E;
-  font-weight: 500;
-  font-size: 20px;
+.heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subheading {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.priceBox {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.oldPrice {
+  font-size: 16px;
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 20px;
+}
+
+.bookNowBtn {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.imageCol {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
 }
 
 .nav-link{
@@ -15,6 +58,9 @@
   color: #f2f2f2;
   font-weight: 500;
   font-size: 19px;
+}
+.nav-link:hover{
+  color:rgb(108, 107, 107);
 }
 .dropdown-menu.show {
   font-weight: 500;
@@ -48,14 +94,15 @@
     border-radius: 10px !important;
 }
   .radiology-data {
-    height:150PX !important;
+    height:120PX !important;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width:150px;
+    width:120px;
     transition: 0.3s ease-in;
     border-radius: 50% !important;
+    text-align: center;
  
 }
 .radiology-data:hover{
@@ -65,14 +112,9 @@
   width:60%;
   height: 60%;
 }
-.for-newtry{
-  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.127) !important;
-  background-color: white;
-  border-radius: 5px;
-  margin-top: -100px;
-}
+
 .ndsectionwhysanarCare{
-    box-shadow: 0px 15px 40px 15px rgb(154, 170, 207,25%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius:8px;
     display: flex;
     padding:20px;
@@ -89,11 +131,11 @@
   transform: scale(1.1) !important;
 }
 .scan-card-main{
-  height: 550px;
+  height: 500px;
 }
 .scan-image{
   width: 100%;
-  height: 300px;
+  height: 250px;
   display: flex !important; 
   justify-content: center !important;
   align-items: center !important;
@@ -102,9 +144,9 @@
 .buttonfirst{
 background-color :#46A4D9 !important;
 color: white !important;
-font-weight: 550 !important;
-display: flex!important;
-align-items: center !important;
+font-weight: 550 ;
+display: flex;
+align-items: center;
 justify-content: center !important;
 border: none!important;
 border-radius: 6px!important;
@@ -136,7 +178,7 @@ padding: 10px;
 
 }
 .fifthsec{
-  box-shadow: 0px 15px 40px 15px rgb(154, 170, 207,25%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius:10px;
     display: flex;
     padding:20px;
@@ -180,8 +222,8 @@ padding: 10px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   z-index: 1;
@@ -192,13 +234,14 @@ padding: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width:470px;
-  height: 350px;
+  height: 260px;
+  width: 340px;
   transition: 0.3s ease-in;
 }
 .card-doctor-main:hover{
   transform: scale(1.1);
-  
+width: 340px;
+
 
 }
 .card-doctor-main .card-title {
@@ -209,22 +252,44 @@ padding: 10px;
 
 .card-doctor-main  .card-text {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   color: #fff;
  
 }
+.for-new{
+  width: 265px;
+  height: 265px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.for-new>img{
+  height: 100px;
+  width: 100px;
+  
+}
+.for-new>h4{
+padding-top: 20px;
+  font-size: 20px;
+  font-weight:600;
+  color: #585454;
+}
 .health-div-iind{
-  box-shadow: 0px 15px 40px 10px rgb(154, 170, 207,25%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 0px;
-  height: 620px !important;
+  height: 540px !important;
 }
 .health-div-iind>img{
   width: 100%;
 }
 .health-div{
-  box-shadow: 0px 15px 40px 10px rgb(154, 170, 207,25%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 0px;
-  height: 620px !important;
+  height: 520px !important;
 }
 .health-div>img{
   max-width: 100%;
@@ -232,18 +297,16 @@ padding: 10px;
   height:auto ;
 
 }
-
 .card-header{
   cursor: pointer;
   padding: 10px 20px;
   background-color: #f2f2f2;
   border-bottom: 1px solid #ddd;
-  box-shadow: 0px 4px 4px 0px rgb(0, 0, 0,25%) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-radius: 15px;
+  align-items: center;
+  text-align: center;
 }
 .card-header:hover {
   background-color: #e0e0e0;
@@ -254,7 +317,8 @@ padding: 10px;
   flex-direction: row;
   justify-content: space-between;
   background-color: #46a4d9;
-  width: 80%;
+  width: 74%;
+  margin-left: 80px;
 }
 .testimonial-card {
   background-color: #ffffff !important;
@@ -262,7 +326,7 @@ padding: 10px;
   width: auto !important;
   height: 480px !important;
   border: 0px !important;
-  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.219);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Testimonial Image */
@@ -289,26 +353,18 @@ padding: 10px;
   text-align: center;
   margin-bottom: 2rem;
 }
-.step-column{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin-top: -270px;
-  margin-right: 70px;
-}
+
 .Card-Healthscan{
 border-radius:10px;
 transition: 0.3s ease-in;
 background-color: white;
-box-shadow: 0 4px 4px 0px rgb(0, 0, 0,25%);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 padding: 10px;
 height: 450px;
 }
 .Card-Healthscan>img{
   width: 100%;
+  border-radius: 0px !important;
 }
 .AllbuttonForMove{
   display: flex;
@@ -326,8 +382,31 @@ height: 450px;
   margin-top: 20px;
 }
 
+.slick-slides-partnrs>img{
+  height: 95px;
+  width: 100%;
+}
+.slick-slide {
+  padding: 16px; /* Half of the 20px gap */
+}
+
+.slick-slides-partnrs {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+  border-radius: 8px; /* Optional: adds rounded corners */
+  background-color: white; /* Ensure shadow is visible against background */
+}
+.slick-list {
+  margin: 0 -10px; /* offset the margin added to the slides */
+}
 /* Home page banner text  */
 @media (max-width: 768px) {
+.slick-slides-partnrs>img{
+  height: 35px;
+ width: 100%;
+} 
+.slick-slide {
+  padding: 6px; /* Half of the 20px gap */
+}
   .card-doctor-main{
     width: 250px !important;
     height: 50px !important;
@@ -350,7 +429,7 @@ height: 450px;
     width: auto !important;
     height: auto !important;
     border: 0px !important;
-    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.219);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   /* Testimonial Image */
   .testimonial-image {
@@ -368,9 +447,12 @@ height: 450px;
     padding: 5px !important;
   }
   .Card-Healthscan{
-    height: 260px !important;
+    height: 210px !important;
     border-radius: 0px !important;
-    padding: 0px !important;
+    padding: 5px !important;
+  }
+  .Card-Healthscan>img{
+    border-radius: 0px !important;
   }
  
   .scansIndicators>a>.carousel-control-next-icon{
@@ -410,30 +492,33 @@ height: 450px;
   .for-newtry{
     margin-top: -10px !important;
     height: 60px !important;
+
   }
+ 
   .for-newtry>div>img{
     width: 20px !important;
     height: 20px !important;
   }
-  .for-mob{
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center;
-    text-align: center;
-    padding-right: 10px !important;
-    padding-left: 0px !important;
-  }
-  .for-mob p{
-    display: none;
-  }
+  
+  
   .radiology-data{
-    width: 80px !important;
-    height: 80px !important;
-    padding: 0px !important;
+      height:30PX !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width:30px;
+      transition: 0.3s ease-in;
+      border-radius: 50% !important;
+      text-align: center;
+  }
+  .rd-img{
+    width: 40%;
+    height: 40%;
   }
   .ndsectionwhysanarCare{
     width: 100px ;
-    height: 85px;
+    height: 65px;
     padding:5px 10px;
   }
 
@@ -445,8 +530,8 @@ height: 450px;
     height: 30px ; 
   }
   .scan-card-main{
-    width: 150px  !important;
-    height: 230px !important ;
+    width: 170px  !important;
+    height: 180px !important ;
   }
   .icon{
     width: 50px !important;
@@ -469,8 +554,8 @@ height: 450px;
     margin-bottom: 0px;
   }
   .fifthsec{
-    width: 200px ;
-    height: 200px;
+    width: 170px ;
+    height: 150px;
 
   }
   .fifthsec>img{
@@ -522,9 +607,11 @@ height: 450px;
   .banner h1 span.health {
     font-size: 65px;
   }
+ 
 }
 @media (min-width: 1400px) {
   .header{
+
     height:50px !important;
   }
 }
@@ -533,6 +620,7 @@ height: 450px;
     height:480px !important;
 
   }
+
 }
 
 /* For screens with width <= 1200px and height <= 560px */
@@ -607,6 +695,91 @@ height: 450px;
     height: 150px;
   }
 }
+
+
+
+
+
+/* Medium devices (laptops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .step-column{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: -265px;
+    margin-right: 70px;
+  }
+ 
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .step-column{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: -265px;
+    margin-right: 70px;
+  }
+  
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  .step-column{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: -265px;
+    margin-right: 70px;
+  }
+ 
+}
+
+/* Custom styles for specific breakpoints */
+
+/* Large desktops */
+@media (min-width: 1400px) {
+  .step-column{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: -265px;
+    margin-right: 70px;
+  }
+}
+/* High-resolution laptops */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .step-column{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: -175px;
+    margin-right: 50px;
+  }
+
+}
+/* Tablets and small laptops */
+
+
+
+  
+
 
 
 

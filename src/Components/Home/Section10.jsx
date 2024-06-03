@@ -14,11 +14,11 @@ export default function Ses() {
   };
   return (
     <>
-      <Row className='d-flex justify-content-center align-items-center py-5'>
-        <Col md={10}>
+      <Row className='d-flex justify-content-center align-items-center py-lg-5 py-md-5 py-xl-5 py-3'>
+        <Col md={10} xs={12}>
           <h1 className='text-center hed1'>FAQs</h1>
-          <h4 className='text-center hed4 pb-5'>Frequently Asked Questions</h4>
-          <div className='card-header mb-3 gap-5' onClick={() => toggleAccordion(0)} style={{ backgroundColor: "#FFD0BB" }}>
+          <h4 className='text-center hed4 pb-lg-4 pb-md-5 pb-xl-5 pb-3'>Frequently Asked Questions</h4>
+          <div className='card-header mb-3  d-flex justify-content-md-between justify-content-xl-between  justify-content-lg-between justify-content-center' onClick={() => toggleAccordion(0)} style={{ backgroundColor: "#FFD0BB" }}>
             <h1 className='text-center hed3' style={{ color: "#585454" }}> What makes Sanar Care the best diagnostic centre in Gurgaon?
             </h1>
             <span className='icon'>{expandedIndex === 0 ? <FaMinus className='p-1  rounded-5 ' size={25} style={{ border: "1px solid black ", color: "#585454" }} /> : <FaPlus className='p-1 rounded-5' size={25} style={{ border: "1px solid black ", color: "#585454" }} />}</span>
@@ -31,7 +31,7 @@ export default function Ses() {
               </li>
             </ul>
           )}
-          <div className='card-header  mb-3' onClick={() => toggleAccordion(1)} style={{  backgroundColor: "#B3BDF1" }}>
+          <div className='card-header  d-flex justify-content-md-between justify-content-xl-between  justify-content-lg-between justify-content-center mb-3 gap-5' onClick={() => toggleAccordion(1)} style={{  backgroundColor: "#B3BDF1" }}>
             <h1 className='text-center hed3' style={{ color: "#585454" }}>How does a PET scan in Gurgaon at Sanar Care work?
             </h1>
             <span className='icon'>{expandedIndex === 1 ? <FaMinus className='p-1  rounded-5 ' size={25} style={{ border: "1px solid black ", color: "#585454" }} /> : <FaPlus className='p-1 rounded-5' size={25} style={{ border: "1px solid black ", color: "#585454" }} />}</span>
@@ -44,7 +44,7 @@ export default function Ses() {
               </li>
             </ul>
           )}
-          <div className='card-header  mb-3' onClick={() => toggleAccordion(2)} style={{ backgroundColor: "#99E6FF" }}>
+          <div className='card-header  d-flex justify-content-md-between justify-content-xl-between  justify-content-lg-between justify-content-center mb-3' onClick={() => toggleAccordion(2)} style={{ backgroundColor: "#99E6FF" }}>
             <h1 className='text-center hed3' style={{ color: "#585454" }}> What is the difference between a PET scan and a PET-CT scan in Gurgaon?
             </h1>
             <span className='icon'>{expandedIndex === 2 ? <FaMinus className='p-1  rounded-5 ' size={25} style={{ border: "1px solid black ", color: "#585454" }} /> : <FaPlus className='p-1 rounded-5' size={25} style={{ border: "1px solid black ", color: "#585454" }} />}</span>
@@ -57,7 +57,7 @@ export default function Ses() {
               </li>
             </ul>
           )}
-          <div className='card-header  mb-3' onClick={() => toggleAccordion(3)} style={{ backgroundColor: "#B3BDF1" }}>
+          <div className='card-header  d-flex justify-content-md-between justify-content-xl-between  justify-content-lg-between justify-content-center mb-3' onClick={() => toggleAccordion(3)} style={{ backgroundColor: "#B3BDF1" }}>
             <h1 className='text-center hed3' style={{ color: "#585454" }}>Where can I find a reliable pathology lab near me in Gurgaon?
             </h1>
             <span className='icon'>{expandedIndex === 3 ? <FaMinus className='p-1  rounded-5 ' size={25} style={{ border: "1px solid black ", color: "#585454" }} /> : <FaPlus className='p-1 rounded-5' size={25} style={{ border: "1px solid black ", color: "#585454" }} />}</span>
@@ -70,7 +70,7 @@ export default function Ses() {
               </li>
             </ul>
           )}
-          <div className='card-header  mb-3' onClick={() => toggleAccordion(4)} style={{ backgroundColor: "#B3E6BE" }}>
+          <div className='card-header  d-flex justify-content-md-between justify-content-xl-between  justify-content-lg-between justify-content-center mb-3' onClick={() => toggleAccordion(4)} style={{ backgroundColor: "#B3E6BE" }}>
             <h1 className='text-center hed3' style={{ color: "#585454" }}>Are there any quality pathlabs near me in Gurgaon that offer affordable services?
             </h1>
             <span className='icon'>{expandedIndex === 4 ? <FaMinus className='p-1  rounded-5 ' size={25} style={{ border: "1px solid black ", color: "#585454" }} /> : <FaPlus className='p-1 rounded-5' size={25} style={{ border: "1px solid black ", color: "#585454" }} />}</span>
@@ -84,8 +84,8 @@ export default function Ses() {
             </ul>
           )}
 
-          <div className='card-header  mb-3' onClick={() => toggleAccordion(5)} style={{ backgroundColor: "#FFD0BB" }}>
-            <h1 className='text-center hed3' style={{ color: "#585454" }}>How much does a DEXA scan cost at <br className='d-block d-md-none ' />  Sanar Care in Gurgaon? ?
+          <div className='card-header  d-flex justify-content-md-between justify-content-xl-between  justify-content-lg-between justify-content-center mb-3' onClick={() => toggleAccordion(5)} style={{ backgroundColor: "#FFD0BB" }}>
+            <h1 className='text-center hed3' style={{ color: "#585454" }}>How much does a DEXA scan cost at   Sanar Care in Gurgaon? ?
             </h1>
             <span className='icon'>{expandedIndex === 5 ? <FaMinus className='p-1  rounded-5 ' size={25} style={{ border: "1px solid black ", color: "#585454" }} /> : <FaPlus className='p-1 rounded-5' size={25} style={{ border: "1px solid black ", color: "#585454" }} />}</span>
           </div>
@@ -97,8 +97,8 @@ export default function Ses() {
               </li>
             </ul>
           )}
-          <div className='card-header  mb-3' onClick={() => toggleAccordion(6)} style={{ backgroundColor: "#99E6FF" }}>
-            <h1 className='text-center hed3' style={{ color: "#585454" }}>Does Sanar Care Diagnostic Centre <br className='d-block d-md-none ' /> in Gurgaon offer MRI scans?
+          <div className='card-header  d-flex justify-content-md-between justify-content-xl-between  justify-content-lg-between justify-content-center mb-3' onClick={() => toggleAccordion(6)} style={{ backgroundColor: "#99E6FF" }}>
+            <h1 className='text-center hed3' style={{ color: "#585454" }}>Does Sanar Care Diagnostic Centrein Gurgaon offer MRI scans?
             </h1>
             <span className='icon'>{expandedIndex === 6 ? <FaMinus className='p-1  rounded-5 ' size={25} style={{ border: "1px solid black ", color: "#585454" }} /> : <FaPlus className='p-1 rounded-5' size={25} style={{ border: "1px solid black ", color: "#585454" }} />}</span>
           </div>

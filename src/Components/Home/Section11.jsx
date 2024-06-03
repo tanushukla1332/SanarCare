@@ -55,14 +55,14 @@ export default function Section11() {
   return (
     <Row className="section11-container py-lg-5 py-md-5 py-xl-5 py-3">
     <h1 className='hed1 text-center text-white pb-lg-5 pb-xl-5 pb-md-5 pb-3'>Patient Testimonials</h1>
-    <Col md={5}  className='d-xl-block d-none'>
+    <Col md={5} xs={10}  className='d-xl-block d-none'>
       <h3 className="hed3 text-white text-center">
         Hear from our customers about their experiences with Sanar Care's services. We value feedback regarding their visits to our labs.
 
       </h3>
       <img src={IMG1} alt="" className='img-fluid'/>
     </Col>
-    <Col md={7}> 
+    <Col md={7} xs={10}> 
       <div className="swiper-container pb-5">
         <Swiper
           spaceBetween={10}

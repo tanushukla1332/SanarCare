@@ -13,27 +13,15 @@ import Section10 from "./Section10";
 import Section11 from "./Section11";
 import Section12 from "./Section12";
 import Section13 from "./Section13";
-import banner from '../../../public/Image/banner.png';
-
+import banner from '../../../public/Image/mri scanning.png';
 import Banner from "./bannerlayout";
-
-
 
 export default function Home() {
     return (
         <>
-      <Row
-     style={{
-        backgroundImage: `url(${banner})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover", // Use 'cover' for responsive background image
-        backgroundPosition: "center",
-        boxShadow: "0px 4px 4px 4px rgba(0, 0, 0, 0.127)",  
-        overflow: "visible",
-    }}  
-    className="row-bac"
->
-    <Col className="p-0 col-md-6 col-sm-12"> {/* Adjusted column sizes for responsiveness */}
+      <Row>
+        <img src={banner} alt="banner"  className="img-fluid px-0"/>
+    <Col className="d-none"> {/* Adjusted column sizes for responsiveness */}
         <div className="banner pt-2">
                 <p className="scan">
                     <span className="">where every</span>
@@ -54,25 +42,28 @@ export default function Home() {
 
         
             <Banner />
-            <SEctionFirst />
             <SectionThree />
             <Section12 />
-            <SectionSix />
-            <SectionFour />
+            <SEctionFirst />
             <SectionNd />
            
-           
-          
+            <SectionFour />
+    
             <SectionFive />
-            <Section13 />
+          
+           
 
             <Section9 />
+     
+      
             <Section8 />
-
+            <SectionSix />
             <Section7 />
+          
             <Section11 />
 
             <Section10 />
+            <Section13 />
 
         </>
     )

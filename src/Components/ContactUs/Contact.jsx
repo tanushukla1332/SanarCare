@@ -38,12 +38,11 @@ export default function Contact() {
             required: true
         },
     ];
-
     return (
         <>
             <Row className='px-0 d-md-flex d-none justify-content-center align-items-center gap-5' style={{ backgroundImage: `url(${bannerPage}) `, height: "500px" ,backgroundRepeat:"no-repeat",backgroundSize:"cover",backgroundPosition:"center"}}>
-                <Col md={7} style={{ position: "absolute", top: "65%", left: "15%" }}>
-                    <FormLayout heading="Reach" formData={formData1} icons={icons} />
+                <Col md={7} style={{ position: "absolute", top: "85%", left: "0%" }}>
+                    <FormLayout heading="Reach Us" formData={formData1} icons={icons} />
                 </Col>
             </Row>
             <Row className='px-0 d-flex d-md-none justify-content-center align-items-center gap-5' style={{ backgroundImage: `url(${bannerPage}) ` ,backgroundRepeat:"no-repeat",backgroundSize:"cover",backgroundPosition:"center"}}>

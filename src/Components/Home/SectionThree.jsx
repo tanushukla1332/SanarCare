@@ -66,8 +66,8 @@ export default function SectionThree() {
   return (
     <Row className="d-md-flex justify-content-center align-items-center py-lg-5 py-xl-5 py-md-5 py-4">
       <Col md={10} xs={12}>
-        <h1 className="hed1 text-center pb-xl-5 pb-lg-5 pb-md-5 pb-0 hover">Book Scans From SanarCare & Test Services</h1>
-        <Row className="py-3 d-flex justify-content-center align-items-center">
+        <h1 className="hed1 text-center pb-xl-4 pb-lg-4 pb-md-4 pb-0 hover">Book Scans From SanarCare & Test Services</h1>
+        <Row className="py-lg-3 py-md-3 py-xl-3 py-1  d-flex justify-content-center align-items-center">
           <Swiper
             spaceBetween={10}
             slidesPerView={slidesPerView}
@@ -98,8 +98,8 @@ export default function SectionThree() {
                     <Card.Body>
                       <Card.Title className="text-center hed3">{slide.title}</Card.Title>
                       <Card.Text className="text-center hed4">{slide.center}</Card.Text>
-                      <Card.Text className="price text-center para">start <span style={{textDecoration:"line-through",color:'#3b7fbf',fontSize:"16px"}}>900</span>
-                      <span >{slide.price}</span></Card.Text>
+                      <Card.Text className="price text-center para">  <span className='para'>start </span><span style={{textDecoration:"line-through",color:'#3b7fbf',fontSize:"16px"}}>900</span>
+                      <span ><span className='para'>{slide.price}</span></span></Card.Text>
                       
                     </Card.Body>
                     <div className="text-center my-4 d-flex justify-content-center align-items-center">
